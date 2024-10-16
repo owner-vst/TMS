@@ -7,7 +7,7 @@ function Thesis() {
       {/* Banner  */}
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
-        style={{ backgroundImage: "url(/assests/images/banner/bnr3.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/banner/bnr3.jpg)" }}
       >
         <div className="container">
           <div className="dz-bnr-inr-entry">
@@ -36,7 +36,7 @@ function Thesis() {
             <div className="col-xl-8 col-lg-8">
               <div className="blog-single pt-20 sidebar dz-card">
                 <div className="dz-media dz-media-rounded rounded">
-                  <img src="/assests/images/blog/large/ai.jpeg" alt="Image" />
+                  <img src="/assets/images/blog/large/ai.jpeg" alt="Image" />
                 </div>
                 <div className="dz-info m-b30">
                   <div className="dz-meta">
@@ -44,7 +44,7 @@ function Thesis() {
                       <li className="post-author">
                         <a>
                           <img
-                            src="/assests/images/avatar/user.png"
+                            src="/assets/images/avatar/user.png"
                             alt="Image"
                           />
                           <span>By Jone Doe</span>
@@ -149,7 +149,7 @@ function Thesis() {
                           <div className="comment-author vcard">
                             <img
                               className="avatar photo"
-                              src="/assests/images/avatar/user.png"
+                              src="/assets/images/avatar/user.png"
                               alt="Image"
                             />
                           </div>
@@ -166,7 +166,7 @@ function Thesis() {
                           <div className="comment-author vcard">
                             <img
                               className="avatar photo"
-                              src="/assests/images/avatar/user.png"
+                              src="/assets/images/avatar/user.png"
                               alt="Image"
                             />
                           </div>
@@ -179,7 +179,7 @@ function Thesis() {
                           <div className="comment-author vcard">
                             <img
                               className="avatar photo"
-                              src="/assests/images/avatar/user.png"
+                              src="/assets/images/avatar/user.png"
                               alt="Image"
                             />
                           </div>
@@ -213,7 +213,6 @@ function Thesis() {
                         id="commentform"
                         method="post"
                       >
-                       
                         <p className="comment-form-comment">
                           <label htmlFor="comment">Comment</label>
                           <textarea
@@ -240,7 +239,7 @@ function Thesis() {
                 </div>
               </div>
             </div>
-            <AdvancedSearch/>
+            <AdvancedSearch />
           </div>
         </div>
       </section>

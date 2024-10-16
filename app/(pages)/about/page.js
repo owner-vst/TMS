@@ -6,7 +6,7 @@ function About() {
     <div>
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
-        style={{ backgroundImage: "url(/assests/images/banner/bnr1.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/banner/bnr1.jpg)" }}
       >
         <div className="container">
           <div className="dz-bnr-inr-entry">
@@ -41,7 +41,7 @@ function About() {
               >
                 <div className="icon-media">
                   <img
-                    src="/assests/images/icon/pic1.png"
+                    src="/assets/images/icon/pic1.png"
                     alt="image"
                     className="rounded"
                   />
@@ -64,7 +64,7 @@ function About() {
               >
                 <div className="icon-media">
                   <img
-                    src="/assests/images/icon/value.png"
+                    src="/assets/images/icon/value.png"
                     alt="image"
                     className="rounded"
                   />
@@ -87,7 +87,7 @@ function About() {
               >
                 <div className="icon-media">
                   <img
-                    src="/assests/images/icon/pic3.png"
+                    src="/assets/images/icon/pic3.png"
                     alt="image"
                     className="rounded"
                   />
@@ -114,17 +114,13 @@ function About() {
             </h2>
           </div>
           <div className="row">
-            
             <div className="col-xl-4 col-md-6  m-b30">
               <div
                 className="dz-card style-1 overlay-shine wow fadeInUp"
                 data-wow-delay="1.0s"
               >
                 <div className="dz-media">
-                 
-                    <img src="/assests/images/about/p1.jpeg" alt="img" />
-                  
-                  
+                  <img src="/assets/images/about/p1.jpeg" alt="img" />
                 </div>
                 <div className="dz-info">
                   <div className="dz-meta">
@@ -133,16 +129,16 @@ function About() {
                         <span>
                           <i className="fa-solid fa-user" />
                         </span>
-                    
-                       Scholar
+                        Scholar
                       </li>
                     </ul>
                   </div>
-                  <h4 className="dz-title">
-                    David
-                  </h4>
-                  <p> Thesis Contributed:10 <br></br>Thesis Reviewed:12<br></br>Since 2010</p>
-                 
+                  <h4 className="dz-title">David</h4>
+                  <p>
+                    {" "}
+                    Thesis Contributed:10 <br></br>Thesis Reviewed:12<br></br>
+                    Since 2010
+                  </p>
                 </div>
               </div>
             </div>
@@ -152,10 +148,7 @@ function About() {
                 data-wow-delay="1.0s"
               >
                 <div className="dz-media">
-                 
-                    <img src="/assests/images/about/p2.jpeg" alt="img" />
-                  
-                  
+                  <img src="/assets/images/about/p2.jpeg" alt="img" />
                 </div>
                 <div className="dz-info">
                   <div className="dz-meta">
@@ -164,16 +157,16 @@ function About() {
                         <span>
                           <i className="fa-solid fa-user" />
                         </span>
-                    
-                       Scholar
+                        Scholar
                       </li>
                     </ul>
                   </div>
-                  <h4 className="dz-title">
-                   Mark
-                  </h4>
-                  <p> Thesis Contributed:15 <br></br>Thesis Reviewed:16<br></br>Since 2014</p>
-                 
+                  <h4 className="dz-title">Mark</h4>
+                  <p>
+                    {" "}
+                    Thesis Contributed:15 <br></br>Thesis Reviewed:16<br></br>
+                    Since 2014
+                  </p>
                 </div>
               </div>
             </div>
@@ -183,10 +176,7 @@ function About() {
                 data-wow-delay="1.0s"
               >
                 <div className="dz-media">
-                  
-                    <img src="/assests/images/about/p3.jpeg" alt="img" />
-                  
-                  
+                  <img src="/assets/images/about/p3.jpeg" alt="img" />
                 </div>
                 <div className="dz-info">
                   <div className="dz-meta">
@@ -195,22 +185,19 @@ function About() {
                         <span>
                           <i className="fa-solid fa-user" />
                         </span>
-                    
-                       Scholar
+                        Scholar
                       </li>
                     </ul>
                   </div>
-                  <h4 className="dz-title">
-                    Harris
-                  </h4>
-                  <p> Thesis Contributed:20 <br></br>Thesis Reviewed:17<br></br>Since 2010</p>
-                 
+                  <h4 className="dz-title">Harris</h4>
+                  <p>
+                    {" "}
+                    Thesis Contributed:20 <br></br>Thesis Reviewed:17<br></br>
+                    Since 2010
+                  </p>
                 </div>
               </div>
             </div>
-            
-
-            
           </div>
         </div>
       </section>

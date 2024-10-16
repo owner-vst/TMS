@@ -387,7 +387,7 @@ function View_Thesis() {
                                 <div className="comment-author vcard">
                                   <img
                                     className="avatar photo"
-                                    src="/assests/images/avatar/user.png"
+                                    src="/assets/images/avatar/user.png"
                                     alt="Image"
                                   />
                                 </div>
@@ -404,7 +404,7 @@ function View_Thesis() {
                                 <div className="comment-author vcard">
                                   <img
                                     className="avatar photo"
-                                    src="/assests/images/avatar/user.png"
+                                    src="/assets/images/avatar/user.png"
                                     alt="Image"
                                   />
                                 </div>
@@ -419,7 +419,7 @@ function View_Thesis() {
                                 <div className="comment-author vcard">
                                   <img
                                     className="avatar photo"
-                                    src="/assests/images/avatar/user.png"
+                                    src="/assets/images/avatar/user.png"
                                     alt="Image"
                                   />
                                 </div>

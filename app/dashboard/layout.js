@@ -54,7 +54,7 @@ function layout({ children }) {
         <Script src="/dash/vendor/global/global.min.js"></Script>
         <Script src="/dash/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></Script>
 
-        <Script src="/dash/vendor/apexchart/apexchart.js"></Script>
+        {/* <Script src="/dash/vendor/apexchart/apexchart.js"></Script> */}
         <Script src="/dash/vendor/chartjs/chart.bundle.min.js"></Script>
         <Script src="/dash/vendor/select2/js/select2.full.min.js"></Script>
         <Script src="/dash/js/plugins-init/select2-init.js"></Script>

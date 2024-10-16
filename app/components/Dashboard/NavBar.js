@@ -23,7 +23,7 @@ function NavBar() {
       { label: "Manage Peer Review", link: "/dashboard/admin/manage_peer" },
       { label: "Manage Users", link: "/dashboard/admin/manage_users" },
       { label: "Manage Thesis", link: "/dashboard/admin/manage_thesis" },
-     
+
       { label: "Profile", link: "/dashboard/admin/profile" },
     ],
     scholar: [
@@ -49,32 +49,6 @@ function NavBar() {
   const currentMenuItems = menuItems[role] || [];
 
   return (
-    //     <div className="dlabnav">
-    //       <div className="dlabnav-scroll">
-
-    //         <ul className="metismenu" id="menu">
-    //           <li>
-    //             <a aria-expanded="false">
-    //               <i className="fas fa-bars"></i>
-    //               <span className="nav-text">Dashboard</span>
-    //             </a>
-    //             <ul aria-expanded="false">
-    //               {currentMenuItems.map((item, index) => (
-    //                 <li key={index}>
-    //                   <Link href={item.link}>{item.label}</Link>
-    //                 </li>
-    //               ))}
-    //             </ul>
-    //           </li>
-    //           <li></li>
-    //         </ul>
-    //         <div className="copyright">
-    //   <p><strong>Jobick Job Admin</strong> © 2023 All Rights Reserved</p>
-    //   <p className="fs-12">Made with <span className="heart" /> by DexignLab</p>
-    // </div>
-    //       </div>
-    //       <></>
-    //     </div>
     <div className="dlabnav">
       <div className="dlabnav-scroll">
         <ul className="metismenu" id="menu">
@@ -93,8 +67,6 @@ function NavBar() {
           </li>
           <li></li>
         </ul>
-
-        {/* Copyright section always at the bottom */}
         <div className="copyright fixed-bottom ">
           <p>
             <strong>ScholarVault</strong> © 2024 All Rights Reserved

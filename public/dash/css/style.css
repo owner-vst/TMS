@@ -1,12 +1,6 @@
 /*
     Table of Contents
 
-    Name                 : JOBICK
-    Author               : DexignLab
-    Author Portfolio     : https://themeforest.net/user/dexignlab/portfolio
-    
-
-
     Table of Sass Contents
 
     1. Abstracts
@@ -69,12 +63,12 @@
 @import url("./../icons/flaticon_1/flaticon_1.css");
 @import url("./../icons/icomoon/icomoon.css");
 @import url("./../icons/bootstrap-icons/font/bootstrap-icons.css");
-@import url(./../vendor/animate/animate.min.css);
-@import url(./../vendor/aos/css/aos.min.css);
-@import url(./../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
-@import url(./../vendor/metismenu/css/metisMenu.min.css);
+@import url("./../vendor/animate/animate.min.css");
+@import url("./../vendor/aos/css/aos.min.css");
+@import url("./../vendor/perfect-scrollbar/css/perfect-scrollbar.css");
+@import url("./../vendor/metismenu/css/metisMenu.min.css");
 :root {
-  /* --primary: #F93A0B;
+  /* --primary: #f93a0b;
   --secondary: #145650;
   --primary-hover: #cc2c05;
   --primary-dark: #681703;
@@ -89,7 +83,7 @@
   --rgba-primary-9: rgba(249, 58, 11, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
-  --title: #000;  */
+  --title: #000; */
   --gradient: linear-gradient(
     to right,
     rgb(255, 64, 62) 0%,
@@ -335,8 +329,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #f93a0b;
-  --bs-secondary: #145650;
+  --bs-primary: #4885ed;
+  --bs-secondary: #090915;
   --bs-success: #68e365;
   --bs-info: #d653c1;
   --bs-warning: #ffa755;
@@ -381,7 +375,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f93a0b;
+  --bs-link-color: #4885ed;
   --bs-link-hover-color: #c72e09;
   --bs-code-color: #e83e8c;
   --bs-highlight-bg: #fffee2;
@@ -2384,7 +2378,7 @@ progress {
   background-color: #f5f5f5;
   border-color: #fc9d85;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2531,7 +2525,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #fc9d85;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
 }
 .form-select[multiple],
 .form-select[size]:not([size="1"]) {
@@ -2614,11 +2608,11 @@ textarea.form-control-lg {
 .form-check-input:focus {
   border-color: #fc9d85;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
 }
 .form-check-input:checked {
-  background-color: #f93a0b;
-  border-color: #f93a0b;
+  background-color: #4885ed;
+  border-color: #4885ed;
 }
 .form-check-input:checked[type="checkbox"] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2627,8 +2621,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type="checkbox"]:indeterminate {
-  background-color: #f93a0b;
-  border-color: #f93a0b;
+  background-color: #4885ed;
+  border-color: #4885ed;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2702,10 +2696,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f5f5f5, 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 1px #f5f5f5, 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f5f5f5, 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 1px #f5f5f5, 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2714,7 +2708,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #f93a0b;
+  background-color: #4885ed;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
@@ -2741,7 +2735,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #f93a0b;
+  background-color: #4885ed;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
@@ -3276,8 +3270,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #f93a0b;
-  --bs-btn-border-color: #f93a0b;
+  --bs-btn-bg: #4885ed;
+  --bs-btn-border-color: #4885ed;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #fa5830;
   --bs-btn-hover-border-color: #fa4e23;
@@ -3287,14 +3281,14 @@ fieldset:disabled .btn {
   --bs-btn-active-border-color: #fa4e23;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #f93a0b;
-  --bs-btn-disabled-border-color: #f93a0b;
+  --bs-btn-disabled-bg: #4885ed;
+  --bs-btn-disabled-border-color: #4885ed;
 }
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #145650;
-  --bs-btn-border-color: #145650;
+  --bs-btn-bg: #090915;
+  --bs-btn-border-color: #090915;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #114944;
   --bs-btn-hover-border-color: #104540;
@@ -3304,8 +3298,8 @@ fieldset:disabled .btn {
   --bs-btn-active-border-color: #0f413c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #145650;
-  --bs-btn-disabled-border-color: #145650;
+  --bs-btn-disabled-bg: #090915;
+  --bs-btn-disabled-border-color: #090915;
 }
 
 .btn-success {
@@ -3411,36 +3405,36 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #f93a0b;
-  --bs-btn-border-color: #f93a0b;
+  --bs-btn-color: #4885ed;
+  --bs-btn-border-color: #4885ed;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #f93a0b;
-  --bs-btn-hover-border-color: #f93a0b;
+  --bs-btn-hover-bg: #4885ed;
+  --bs-btn-hover-border-color: #4885ed;
   --bs-btn-focus-shadow-rgb: 249, 58, 11;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #f93a0b;
-  --bs-btn-active-border-color: #f93a0b;
+  --bs-btn-active-bg: #4885ed;
+  --bs-btn-active-border-color: #4885ed;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #f93a0b;
+  --bs-btn-disabled-color: #4885ed;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #f93a0b;
+  --bs-btn-disabled-border-color: #4885ed;
   --bs-gradient: none;
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #145650;
-  --bs-btn-border-color: #145650;
+  --bs-btn-color: #090915;
+  --bs-btn-border-color: #090915;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #145650;
-  --bs-btn-hover-border-color: #145650;
+  --bs-btn-hover-bg: #090915;
+  --bs-btn-hover-border-color: #090915;
   --bs-btn-focus-shadow-rgb: 20, 86, 80;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #145650;
-  --bs-btn-active-border-color: #145650;
+  --bs-btn-active-bg: #090915;
+  --bs-btn-active-border-color: #090915;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #145650;
+  --bs-btn-disabled-color: #090915;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #145650;
+  --bs-btn-disabled-border-color: #090915;
   --bs-gradient: none;
 }
 
@@ -3673,7 +3667,7 @@ fieldset:disabled .btn {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #f93a0b;
+  --bs-dropdown-link-active-bg: #4885ed;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3962,7 +3956,7 @@ fieldset:disabled .btn {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #f93a0b;
+  --bs-dropdown-link-active-bg: #4885ed;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
@@ -4154,7 +4148,7 @@ fieldset:disabled .btn {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.75rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #f93a0b;
+  --bs-nav-pills-link-active-bg: #4885ed;
 }
 .nav-pills .nav-link {
   background: none;
@@ -4833,7 +4827,7 @@ fieldset:disabled .btn {
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0340a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #fc9d85;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #e0340a;
@@ -5002,10 +4996,10 @@ fieldset:disabled .btn {
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #f93a0b;
-  --bs-pagination-active-border-color: #f93a0b;
+  --bs-pagination-active-bg: #4885ed;
+  --bs-pagination-active-border-color: #4885ed;
   --bs-pagination-disabled-color: #6c757d;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #dee2e6;
@@ -5242,7 +5236,7 @@ fieldset:disabled .btn {
   --bs-progress-border-radius: 0.75rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #f93a0b;
+  --bs-progress-bar-bg: #4885ed;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -5308,8 +5302,8 @@ fieldset:disabled .btn {
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #f93a0b;
-  --bs-list-group-active-border-color: #f93a0b;
+  --bs-list-group-active-bg: #4885ed;
+  --bs-list-group-active-border-color: #4885ed;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5680,7 +5674,7 @@ fieldset:disabled .btn {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(249, 58, 11, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(72, 133, 237, 0.25);
   opacity: 1;
 }
 .btn-close:disabled,
@@ -7286,7 +7280,7 @@ fieldset:disabled .btn {
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(249, 58, 11, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(72, 133, 237, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -7325,7 +7319,7 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-  color: #f93a0b !important;
+  color: #4885ed !important;
 }
 .link-primary:hover,
 .link-primary:focus {
@@ -7333,7 +7327,7 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #145650 !important;
+  color: #090915 !important;
 }
 .link-secondary:hover,
 .link-secondary:focus {
@@ -13594,7 +13588,7 @@ svg.pulse-svg .third-circle {
 .header-profile .dropdown-menu a:hover,
 .header-profile .dropdown-menu a:focus,
 .header-profile .dropdown-menu a.active {
-  color: #f93a0b;
+  color: #4885ed;
 }
 
 .header-profile img {
@@ -13620,7 +13614,7 @@ svg.pulse-svg .third-circle {
 }
 
 .header-profile .profile_title {
-  background: #f93a0b;
+  background: #4885ed;
   color: #fff;
   padding: 0.625rem 1.25rem;
 }
@@ -16389,7 +16383,7 @@ svg.pulse-svg .third-circle {
   }
   [direction="rtl"] .widget-timeline-icon li {
     border-left: 0;
-    border-right: 6px solid #f93a0b;
+    border-right: 6px solid #4885ed;
   }
   [direction="rtl"] .widget-timeline-icon li a {
     padding: 0 30px 30px 0;
@@ -17729,7 +17723,7 @@ html[dir="rtl"]
   .metismenu
   > li.mega-menu:hover
   > ul::after {
-  background-color: #cc2c05;
+  background-color: #1a66e8;
 }
 [data-sibebarbg="color_4"][data-layout="horizontal"]
   .dlabnav
@@ -17867,19 +17861,19 @@ html[dir="rtl"]
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -18369,19 +18363,19 @@ The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -18848,19 +18842,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -20703,7 +20697,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   z-index: 9;
   top: 14.75rem;
   right: 100%;
-  background-color: #f93a0b;
+  background-color: #4885ed;
   color: #fff;
   display: inline-block;
   height: 3rem;
@@ -20908,7 +20902,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .sidebar-right #header_color_3 + label,
 .sidebar-right #sidebar_color_3 + label,
 .sidebar-right #primary_color_3 + label {
-  background-color: #f93a0b;
+  background-color: #4885ed;
 }
 .sidebar-right #nav_header_color_4 + label,
 .sidebar-right #header_color_4 + label,
@@ -21556,7 +21550,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   margin-bottom: 0.625rem;
 }
 .dlab-demo-panel .dlab-demo-bx.demo-active {
-  border-color: #145650;
+  border-color: #090915;
 }
 .dlab-demo-panel .dlab-demo-bx.demo-active .overlay-layer {
   opacity: 1;
@@ -21634,7 +21628,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_2"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_2"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -21673,7 +21667,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-nav-headerbg="color_3"][data-theme-version="dark"],
 [data-nav-headerbg="color_3"] {
-  --nav-headbg: #f93a0b;
+  --nav-headbg: #4885ed;
 }
 [data-nav-headerbg="color_3"][data-theme-version="dark"]
   .nav-header
@@ -21709,7 +21703,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_3"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_3"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -21784,7 +21778,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_4"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_4"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -21859,7 +21853,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_5"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_5"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -21934,7 +21928,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_6"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_6"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22009,7 +22003,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_7"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_7"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22084,7 +22078,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_8"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_8"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22159,7 +22153,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_9"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_9"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22234,7 +22228,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_10"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_10"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22309,7 +22303,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_11"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_11"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22384,7 +22378,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_12"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_12"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22459,7 +22453,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_13"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_13"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22534,7 +22528,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_14"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_14"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -22609,7 +22603,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .logo-abbr
   path,
 [data-nav-headerbg="color_15"] .nav-header .logo-abbr path {
-  fill: #f93a0b;
+  fill: #4885ed;
 }
 [data-nav-headerbg="color_15"][data-theme-version="dark"][data-nav-headerbg="color_8"]
   .nav-header
@@ -23172,7 +23166,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-sibebarbg="color_3"][data-theme-version="dark"],
 [data-sibebarbg="color_3"] {
-  --sidebar-bg: #f93a0b;
+  --sidebar-bg: #4885ed;
   /* .hamburger .line{
 				background:$white;
 			} */
@@ -23190,7 +23184,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   li
   > ul,
 [data-sibebarbg="color_3"] .menu-toggle .dlabnav .metismenu li > ul {
-  background: #f93a0b !important;
+  background: #4885ed !important;
 }
 [data-sibebarbg="color_3"][data-theme-version="dark"]
   .dlabnav
@@ -30168,7 +30162,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-headerbg="color_3"][data-theme-version="dark"],
 [data-headerbg="color_3"] {
-  --headerbg: #f93a0b;
+  --headerbg: #4885ed;
 }
 [data-headerbg="color_3"][data-theme-version="dark"]
   .search-area
@@ -32470,7 +32464,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_2"] {
   --primary: #6610f2;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #510bc4;
   --primary-dark: #290564;
   --rgba-primary-1: rgba(102, 16, 242, 0.1);
@@ -32485,24 +32479,24 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 [data-primary="color_3"] {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
 }
 
 [data-primary="color_4"] {
   --primary: #4d06a5;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #360474;
   --primary-dark: #080111;
   --rgba-primary-1: rgba(77, 6, 165, 0.1);
@@ -32518,7 +32512,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_5"] {
   --primary: #dc3545;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #bd2130;
   --primary-dark: #66121a;
   --rgba-primary-1: rgba(220, 53, 69, 0.1);
@@ -32534,7 +32528,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_6"] {
   --primary: #fd7e14;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #dc6502;
   --primary-dark: #773701;
   --rgba-primary-1: rgba(253, 126, 20, 0.1);
@@ -32550,7 +32544,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_7"] {
   --primary: #ffc107;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #d39e00;
   --primary-dark: #6d5200;
   --rgba-primary-1: rgba(255, 193, 7, 0.1);
@@ -32566,7 +32560,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_8"] {
   --primary: #fff;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #e6e6e6;
   --primary-dark: #b3b3b3;
   --rgba-primary-1: rgba(255, 255, 255, 0.1);
@@ -32582,7 +32576,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_9"] {
   --primary: #20c997;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #199d76;
   --primary-dark: #0b4534;
   --rgba-primary-1: rgba(32, 201, 151, 0.1);
@@ -32598,7 +32592,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_10"] {
   --primary: #17a2b8;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #117a8b;
   --primary-dark: #062a30;
   --rgba-primary-1: rgba(23, 162, 184, 0.1);
@@ -32614,7 +32608,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_11"] {
   --primary: #94618e;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #754d70;
   --primary-dark: #382435;
   --rgba-primary-1: rgba(148, 97, 142, 0.1);
@@ -32630,7 +32624,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_12"] {
   --primary: #343a40;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #1d2124;
   --primary-dark: black;
   --rgba-primary-1: rgba(52, 58, 64, 0.1);
@@ -32646,7 +32640,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_13"] {
   --primary: #2a2a2a;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #111111;
   --primary-dark: black;
   --rgba-primary-1: rgba(42, 42, 42, 0.1);
@@ -32662,7 +32656,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_14"] {
   --primary: #4885ed;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #1a66e8;
   --primary-dark: #0e3d8e;
   --rgba-primary-1: rgba(72, 133, 237, 0.1);
@@ -32678,7 +32672,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-primary="color_15"] {
   --primary: #4cb32b;
-  --secondary: #145650;
+  --secondary: #090915;
   --primary-hover: #3b8a21;
   --primary-dark: #18380d;
   --rgba-primary-1: rgba(76, 179, 43, 0.1);
@@ -32713,19 +32707,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -32818,7 +32812,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 [data-theme-version="transparent"] .header-left input:focus {
   box-shadow: none;
-  border-color: #f93a0b;
+  border-color: #4885ed;
 }
 [data-theme-version="transparent"] .header-left input::placeholder {
   color: #fff;
@@ -32911,19 +32905,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -34195,7 +34189,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 #external-events [data-class="bg-secondary"]::before {
-  background: #145650;
+  background: #090915;
 }
 
 .fc .fc-row .fc-content-skeleton table,
@@ -35320,7 +35314,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 .ct-series-a .ct-area,
 .ct-series-a .ct-slice-pie {
-  fill: #145650;
+  fill: #090915;
 }
 
 .ct-series-b .ct-area,
@@ -36154,19 +36148,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -36414,14 +36408,14 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 .checkbox-secondary .form-check-input:focus {
-  border-color: #145650;
+  border-color: #090915;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(20, 86, 80, 0.25);
 }
 
 .checkbox-secondary .form-check-input:checked {
-  background-color: #145650;
-  border-color: #145650;
+  background-color: #090915;
+  border-color: #090915;
 }
 [data-theme-version="dark"] .checkbox-secondary .form-check-input:checked {
   background-color: rgba(20, 86, 80, 0.5);
@@ -36675,7 +36669,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .datepicker table tr td.selected,
 .datepicker table tr td.active.active {
   border: 0;
-  background: linear-gradient(to right, #f93a0b 0%, #f93a0b 100%) !important;
+  background: linear-gradient(to right, #4885ed 0%, #4885ed 100%) !important;
   color: #fff;
 }
 
@@ -36921,19 +36915,19 @@ button.cancelBtn.btn.btn-sm.btn-inverse,
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -37253,19 +37247,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -37285,19 +37279,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -37335,19 +37329,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -37409,19 +37403,19 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;
@@ -38224,7 +38218,7 @@ table {
 
 .ck.ck-editor .ck.ck-button {
   padding: 8px 12px;
-  background-color: rgba(249, 58, 11, 0.1);
+  background-color: rgba(72, 133, 237, 0.1);
   color: var(--primary);
   font-weight: 700;
   border-radius: 0.5rem;
@@ -38240,7 +38234,7 @@ table {
   background-color: #212130;
 }
 .ck.ck-editor .ck.ck-toolbar .ck.ck-button:hover {
-  background-color: #f93a0b;
+  background-color: #4885ed;
 }
 .ck.ck-editor .ck.ck-toolbar .ck.ck-button:hover span {
   color: #fff;
@@ -38264,7 +38258,7 @@ table {
 }
 
 .ck.ck-editor .ck-reset.ck-list .ck-list__item .ck-button.ck-on {
-  background: #f93a0b;
+  background: #4885ed;
 }
 
 .ck-editor__editable {
@@ -38303,7 +38297,7 @@ button.ck.ck-button.ck-off:hover {
 
 .ck.ck-button.ck-on:not(.ck-disabled):hover,
 a.ck.ck-button.ck-on:not(.ck-disabled):hover {
-  background-color: #f93a0b;
+  background-color: #4885ed;
 }
 
 .ck.ck-reset.ck-dropdown__panel.ck-dropdown__panel_se.ck-dropdown__panel-visible {
@@ -38743,7 +38737,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 .alert-secondary {
   background: #d9f6f3;
   border-color: #d9f6f3;
-  color: #145650;
+  color: #090915;
 }
 [data-theme-version="dark"] .alert-secondary {
   background: rgba(20, 86, 80, 0.5);
@@ -38817,7 +38811,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 }
 
 .alert-alt.alert-secondary {
-  border-left: 0.25rem solid #145650;
+  border-left: 0.25rem solid #090915;
 }
 
 .alert-alt.alert-success {
@@ -38888,9 +38882,9 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 }
 
 .alert.alert-secondary.solid {
-  background: #145650;
+  background: #090915;
   color: #fff;
-  border-color: #145650;
+  border-color: #090915;
 }
 
 .alert.alert-success.solid {
@@ -38947,7 +38941,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 .alert.alert-outline-secondary {
   background: transparent;
   color: #888888;
-  border-color: #145650;
+  border-color: #090915;
 }
 
 .alert.alert-outline-success {
@@ -39054,8 +39048,8 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 }
 
 .badge-outline-secondary {
-  border: 0.0625rem solid #145650;
-  color: #145650;
+  border: 0.0625rem solid #090915;
+  color: #090915;
 }
 [data-theme-version="dark"] .badge-outline-secondary {
   color: #888888;
@@ -39134,7 +39128,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 }
 
 .badge-secondary {
-  background-color: #145650;
+  background-color: #090915;
 }
 
 .badge-info {
@@ -39191,7 +39185,7 @@ a.ck.ck-button.ck-on:not(.ck-disabled):hover {
 
 .light.badge-secondary {
   background-color: #d9f6f3;
-  color: #145650;
+  color: #090915;
 }
 [data-theme-version="dark"] .light.badge-secondary {
   background-color: #ffefeb;
@@ -39513,10 +39507,10 @@ button:focus {
 .light.btn-secondary {
   background-color: #d9f6f3;
   border-color: #d9f6f3;
-  color: #145650;
+  color: #090915;
 }
 .light.btn-secondary g [fill] {
-  fill: #145650;
+  fill: #090915;
 }
 [data-theme-version="dark"] .light.btn-secondary {
   background-color: rgba(20, 86, 80, 0.5);
@@ -39524,8 +39518,8 @@ button:focus {
   color: #fff;
 }
 .light.btn-secondary:hover {
-  background-color: #145650;
-  border-color: #145650;
+  background-color: #090915;
+  border-color: #090915;
   color: #fff;
 }
 .light.btn-secondary:hover g [fill] {
@@ -39649,14 +39643,14 @@ button:focus {
   fill: #fff;
 }
 .btn.tp-btn.btn-secondary {
-  color: #145650;
+  color: #090915;
 }
 .btn.tp-btn.btn-secondary g [fill] {
-  fill: #145650;
+  fill: #090915;
 }
 .btn.tp-btn.btn-secondary:hover {
-  background-color: #145650;
-  border-color: #145650;
+  background-color: #090915;
+  border-color: #090915;
   color: #fff;
 }
 .btn.tp-btn.btn-secondary:hover g [fill] {
@@ -39767,18 +39761,18 @@ button:focus {
   fill: var(--primary);
 }
 .btn.tp-btn-light.btn-secondary {
-  color: #145650;
+  color: #090915;
 }
 .btn.tp-btn-light.btn-secondary g [fill] {
-  fill: #145650;
+  fill: #090915;
 }
 .btn.tp-btn-light.btn-secondary:hover {
   background-color: #d9f6f3;
   border-color: #d9f6f3;
-  color: #145650;
+  color: #090915;
 }
 .btn.tp-btn-light.btn-secondary:hover g [fill] {
-  fill: #145650;
+  fill: #090915;
 }
 .btn.tp-btn-light.btn-warning {
   color: #ffa755;
@@ -40844,7 +40838,7 @@ button:focus {
 }
 
 .label-secondary {
-  background: #145650;
+  background: #090915;
   color: #fff;
 }
 
@@ -40947,8 +40941,8 @@ code {
 .list-group-item.disabled,
 .list-group-item:disabled {
   color: #fff;
-  background-color: #145650;
-  border-color: #145650;
+  background-color: #090915;
+  border-color: #090915;
 }
 
 [class*="bg-"] .list-group-item {
@@ -41377,7 +41371,7 @@ code {
   background-color: #17171e;
 }
 .popover-header {
-  background: #145650;
+  background: #090915;
   color: #fff;
   font-weight: 300;
 }
@@ -41417,26 +41411,26 @@ code {
 .bs-popover-auto[data-popper-placement^="top"] .arrow::after,
 .bs-popover-auto[x-placement^="top"] .arrow::after {
   bottom: 0rem;
-  border-top-color: #145650;
+  border-top-color: #090915;
 }
 
 .bs-popover-left .arrow::after,
 .bs-popover-auto[x-placement^="left"] .arrow::after {
   right: 0rem;
-  border-left-color: #145650;
+  border-left-color: #090915;
 }
 
 .bs-popover-right .arrow::after,
 .bs-popover-auto[x-placement^="right"] .arrow::after {
   left: 0rem;
-  border-right-color: #145650;
+  border-right-color: #090915;
 }
 
 .bs-popover-bottom .arrow::after,
 .bs-popover-auto[data-popper-placement^="bottom"] .arrow::after,
 .bs-popover-auto[x-placement^="bottom"] .arrow::after {
   top: 0rem;
-  border-bottom-color: #145650;
+  border-bottom-color: #090915;
 }
 
 .note-popover {
@@ -43098,7 +43092,7 @@ code {
 }
 .table.bg-secondary-hover tr:hover td,
 .table.bg-secondary-hover tr:hover th {
-  background: #145650;
+  background: #090915;
   color: #fff !important;
 }
 .table.bg-info-hover th,
@@ -43686,12 +43680,12 @@ table.dataTable.display tbody td {
   min-width: 0;
 }
 
-.authincation {
+.authentication {
   background: var(--rgba-primary-1);
   display: flex;
   min-height: 100vh;
 }
-.authincation .login-aside {
+.authentication .login-aside {
   background: #fff;
   padding-top: 5rem;
   max-width: 35rem;
@@ -43699,7 +43693,7 @@ table.dataTable.display tbody td {
   z-index: 1;
   position: relative;
 }
-.authincation .login-aside:after {
+.authentication .login-aside:after {
   content: "";
   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
   width: 8.75rem;
@@ -43711,7 +43705,7 @@ table.dataTable.display tbody td {
   background: #fff;
   box-shadow: 0.125rem 0rem 1.875rem rgba(0, 0, 0, 0.15);
 }
-.authincation .login-aside .aside-image {
+.authentication .login-aside .aside-image {
   min-height: 28.125rem;
   margin: auto 0;
   min-width: 0;
@@ -43720,43 +43714,43 @@ table.dataTable.display tbody td {
   background-position: center;
 }
 @media only screen and (max-width: 87.5rem) {
-  .authincation .login-aside {
+  .authentication .login-aside {
     max-width: 22.5rem;
   }
 }
 @media only screen and (max-width: 61.9375rem) {
-  .authincation .login-aside {
+  .authentication .login-aside {
     max-width: 100%;
     padding-top: 0;
   }
-  .authincation .login-aside:after {
+  .authentication .login-aside:after {
     content: none;
   }
 }
 @media only screen and (max-width: 35.9375rem) {
-  .authincation .login-aside .aside-image {
+  .authentication .login-aside .aside-image {
     min-height: 18.75rem;
   }
 }
 
-.authincation-content {
+.authentication-content {
   background: #fff;
   box-shadow: 0 0 2.1875rem 0 rgba(154, 161, 171, 0.15);
   border-radius: 0.3125rem;
 }
-[data-theme-version="dark"] .authincation-content {
+[data-theme-version="dark"] .authentication-content {
   background: #212130;
   box-shadow: none;
 }
-.authincation-content.style-1 {
+.authentication-content.style-1 {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(20px);
 }
-.authincation-content.style-1 .form-control {
+.authentication-content.style-1 .form-control {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 0.3125rem;
 }
-.authincation-content.style-1 .user-icon {
+.authentication-content.style-1 .user-icon {
   height: 6.25rem;
   background: var(--primary);
   width: 6.25rem;
@@ -43771,19 +43765,19 @@ table.dataTable.display tbody td {
   margin-top: -6.25rem;
   margin-bottom: 1.25rem;
 }
-.authincation-content.style-2 {
+.authentication-content.style-2 {
   background: transparent;
   box-shadow: none;
   max-width: 33.125rem;
   width: 100%;
 }
-.authincation-content.style-2 .form-control {
+.authentication-content.style-2 .form-control {
   border: 0;
   border-radius: 0.3125rem;
   box-shadow: 0rem 0rem 0.9375rem rgba(0, 0, 0, 0.08);
 }
 @media only screen and (max-width: 35.9375rem) {
-  .authincation-content.style-2 .auth-form {
+  .authentication-content.style-2 .auth-form {
     padding: 1.875rem 0rem;
   }
 }
@@ -44212,7 +44206,7 @@ span.required {
 }
 
 .plus-box {
-  background: #145650;
+  background: #090915;
   color: #fff;
   font-size: 0.875rem;
   padding: 2rem 2rem;
@@ -44247,7 +44241,7 @@ span.required {
 .plus-icon a {
   height: 3rem;
   width: 3rem;
-  background: #145650;
+  background: #090915;
   display: block;
   border-radius: 0.5rem;
   line-height: 3rem;
@@ -44868,7 +44862,7 @@ fieldset:disabled .btn {
 }
 
 .orange {
-  color: #f93a0b;
+  color: #4885ed;
 }
 
 .location {
@@ -44879,7 +44873,7 @@ fieldset:disabled .btn {
   width: 2.5rem;
   min-width: 2.5rem;
   border-radius: 3.125rem;
-  background: #145650;
+  background: #090915;
   color: #fff;
   line-height: 2.5rem;
   text-align: center;
@@ -48877,7 +48871,7 @@ div#mCSB_1 {
   }
   [direction="rtl"] .widget-timeline-icon li {
     border-left: 0;
-    border-right: 6px solid #f93a0b;
+    border-right: 6px solid #4885ed;
   }
   [direction="rtl"] .widget-timeline-icon li a {
     padding: 0 30px 30px 0;
@@ -49131,19 +49125,19 @@ html[dir="rtl"]
 }
 
 :root {
-  --primary: #f93a0b;
-  --secondary: #145650;
-  --primary-hover: #cc2c05;
-  --primary-dark: #681703;
-  --rgba-primary-1: rgba(249, 58, 11, 0.1);
-  --rgba-primary-2: rgba(249, 58, 11, 0.2);
-  --rgba-primary-3: rgba(249, 58, 11, 0.3);
-  --rgba-primary-4: rgba(249, 58, 11, 0.4);
-  --rgba-primary-5: rgba(249, 58, 11, 0.5);
-  --rgba-primary-6: rgba(249, 58, 11, 0.6);
-  --rgba-primary-7: rgba(249, 58, 11, 0.7);
-  --rgba-primary-8: rgba(249, 58, 11, 0.8);
-  --rgba-primary-9: rgba(249, 58, 11, 0.9);
+  --primary: #4885ed;
+  --secondary: #090915;
+  --primary-hover: #1a66e8;
+  --primary-dark: #0e3d8e;
+  --rgba-primary-1: rgba(72, 133, 237, 0.1);
+  --rgba-primary-2: rgba(72, 133, 237, 0.2);
+  --rgba-primary-3: rgba(72, 133, 237, 0.3);
+  --rgba-primary-4: rgba(72, 133, 237, 0.4);
+  --rgba-primary-5: rgba(72, 133, 237, 0.5);
+  --rgba-primary-6: rgba(72, 133, 237, 0.6);
+  --rgba-primary-7: rgba(72, 133, 237, 0.7);
+  --rgba-primary-8: rgba(72, 133, 237, 0.8);
+  --rgba-primary-9: rgba(72, 133, 237, 0.9);
   --font-family-base: Roboto, sans-serif;
   --font-family-title: Roboto, sans-serif;
   --title: #000;

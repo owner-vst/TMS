@@ -12,8 +12,6 @@ function Reset() {
         form.addEventListener(
           "submit",
           function (event) {
-            
-
             if (!form.checkValidity()) {
               event.preventDefault();
               event.stopPropagation();
@@ -27,11 +25,11 @@ function Reset() {
   }, []);
   return (
     <div className="vh-100">
-      <div className="authincation h-100">
+      <div className="authentication h-100">
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">
             <div className="col-md-6">
-              <div className="authincation-content">
+              <div className="authentication-content">
                 <div className="row no-gutters">
                   <div className="col-xl-12">
                     <div className="auth-form">
@@ -221,14 +219,20 @@ function Reset() {
                         </Link>
                       </div>
                       <h4 className="text-center mb-4">Reset Password</h4>
-                      <form action="/dashboard/admin" className="needs-validation" noValidate>
-                      <div className="mb-3">
+                      <form
+                        action="/dashboard/admin"
+                        className="needs-validation"
+                        noValidate
+                      >
+                        <div className="mb-3">
                           <label className="mb-1">
                             <strong>Verification Code</strong>
                           </label>
-                          <input type="text" className="form-control" 
-                          required
-                          placeholder="Enter verification Code"
+                          <input
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Enter verification Code"
                           />
                           <div className="invalid-feedback">
                             Please enter verification Code
@@ -238,9 +242,11 @@ function Reset() {
                           <label className="mb-1">
                             <strong>New Password</strong>
                           </label>
-                          <input type="text" className="form-control" 
-                          required
-                          placeholder="Enter New Password"
+                          <input
+                            type="text"
+                            className="form-control"
+                            required
+                            placeholder="Enter New Password"
                           />
                           <div className="invalid-feedback">
                             Please enter New Password
@@ -248,8 +254,6 @@ function Reset() {
                         </div>
 
                         <div className="text-center">
-                       
-                         
                           <button
                             type="submit"
                             className="btn btn-primary btn-block"
@@ -257,7 +261,6 @@ function Reset() {
                           >
                             Submit
                           </button>
-                         
                         </div>
                       </form>
                     </div>

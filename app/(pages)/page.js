@@ -1,9 +1,9 @@
-import ThesisCard from "@/app/components/Cards/ThesisCard";
 import Link from "next/link";
+import ThesisCard from "@/app/components/Cards/ThesisCard";
 
-function HomeComponent() {
+export default function Home() {
   return (
-    <>
+    <div>
       <div className="main-bnr bg-light">
         <div className="container">
           <div className="row align-items-center">
@@ -12,7 +12,7 @@ function HomeComponent() {
                 We Have 10,000+ Thesis
               </h6>
               <h1 className=" wow fadeInUp" id="text" data-wow-delay="0.6s">
-                Discover, Submit, and Inspire Academic
+                Discover, Submit, and Inspire Academic<br></br>
                 <span className=" text-primary">Thesis</span>
               </h1>
             </div>
@@ -21,8 +21,8 @@ function HomeComponent() {
                 <img
                   className="media wow bounceInRight"
                   data-wow-delay="1.4s"
-                  src="/assets/images/home-banner/media-men.png"
-                  alt="img "
+                  src="/assets/images/home-banner/v3.png"
+                  alt="home-banner"
                 />
                 <ul className="bnr-blocks">
                   <li>
@@ -311,21 +311,21 @@ function HomeComponent() {
               date="18 Jun 2020"
               title="AI in Healthcare: Transforming Diagnostics"
               desc="Examines the role of AI in enhancing diagnostic accuracy and patient outcomes."
-              img_src="/assets/images/blog/pic1.jpg"
+              img_src="/assets/images/blog/t2.png"
             />
             <ThesisCard
               author="Mark"
               date="11 Jun 2020"
               title="Sustainable Architecture: Green Building Solutions"
               desc="Explores innovative architectural designs that promote environmental sustainability"
-              img_src="/assets/images/blog/pic2.jpg"
+              img_src="/assets/images/blog/t3.png"
             />
             <ThesisCard
               author="Tony"
               date="18 May 2020"
               title=" Blockchain Technology in Financial Security"
               desc="Investigates how blockchain is revolutionizing security in financial transactions."
-              img_src="/assets/images/blog/pic3.jpg"
+              img_src="/assets/images/blog/t3.png"
             />
           </div>
         </div>
@@ -343,34 +343,32 @@ function HomeComponent() {
               date="18 Jun 2020"
               title="Impact of Climate Change on Marine Biodiversity"
               desc="Analyzes the effects of global climate change on marine ecosystems and species diversity."
-              img_src="/assets/images/blog/pic4.jpg"
+              img_src="/assets/images/blog/t5.png"
             />
             <ThesisCard
               author="Chris"
               date="18 Jun 2020"
               title="Advancements in Quantum Computing"
               desc="A study of the potential breakthroughs in quantum computing and its future applications"
-              img_src="/assets/images/blog/pic5.jpg"
+              img_src="/assets/images/blog/t5.png"
             />
             <ThesisCard
               author="David"
               date="18 Jun 2020"
               title="Mental Health Awareness in Modern Workplaces"
               desc="Focuses on promoting mental health initiatives and support systems within corporate environments."
-              img_src="/assets/images/blog/pic6.jpg"
+              img_src="/assets/images/blog/t7.png"
             />
           </div>
         </div>
       </section>
-
-      {/*footer-action */}
       <div className="container">
         <section className="footer-action wow fadeInUp" data-wow-delay="1.0s">
           <div className="inner-content wow fadeInUp" data-wow-delay="1.2s">
             <div className="row justify-content-between align-items-center">
               <div className="text-center text-xl-start col-xl-7 m-lg-b20">
                 <h2 className="title">
-                  Let’s Get Connected And Explore Thesis
+                  Let's Get Connected And Explore Thesis
                 </h2>
               </div>
               <div className="text-center text-xl-end col-xl-5">
@@ -382,8 +380,6 @@ function HomeComponent() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
-
-export default HomeComponent;

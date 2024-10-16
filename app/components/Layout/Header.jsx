@@ -10,7 +10,6 @@ function Header() {
             {/* Website Logo */}
             <div className="logo-header">
               <Link href="/" className="logo-dark">
-               
                 <svg
                   width="250"
                   height="60.14378940098918"
@@ -200,10 +199,9 @@ function Header() {
               <div className="extra-cell">
                 <Link
                   className="btn btn-dark btn-lg btn-shadow"
-                  target="_blank"
                   href="/auth/signin"
                 >
-                  login
+                  Login
                 </Link>
               </div>
             </div>
@@ -216,7 +214,7 @@ function Header() {
             >
               <div className="logo-header">
                 <Link href="/" className="logo-dark">
-                  <img src="/assests/images/logo.png" alt="logo" />
+                  <img src="/assets/images/logo.png" alt="logo" />
                 </Link>
               </div>
               <ul className="nav navbar-nav navbar navbar-left">
