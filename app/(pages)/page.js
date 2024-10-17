@@ -21,7 +21,7 @@ export default function Home() {
                 <img
                   className="media wow bounceInRight"
                   data-wow-delay="1.4s"
-                  src="/assets/images/home-banner/v3.png"
+                  src="/assets/images/home-banner/h1.png"
                   alt="home-banner"
                 />
                 <ul className="bnr-blocks">
@@ -325,7 +325,7 @@ export default function Home() {
               date="18 May 2020"
               title=" Blockchain Technology in Financial Security"
               desc="Investigates how blockchain is revolutionizing security in financial transactions."
-              img_src="/assets/images/blog/t3.png"
+              img_src="/assets/images/blog/t4.png"
             />
           </div>
         </div>
@@ -350,7 +350,7 @@ export default function Home() {
               date="18 Jun 2020"
               title="Advancements in Quantum Computing"
               desc="A study of the potential breakthroughs in quantum computing and its future applications"
-              img_src="/assets/images/blog/t5.png"
+              img_src="/assets/images/blog/t6.png"
             />
             <ThesisCard
               author="David"

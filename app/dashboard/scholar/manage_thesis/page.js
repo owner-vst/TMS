@@ -1,6 +1,7 @@
 import ManageThesisForm from "@/app/components/Forms/ManageThesisForm";
 import UserForm from "@/app/components/Forms/UserForm";
 import ValidationsForm from "@/app/components/Forms/ValidationsForm";
+import Pagination from "@/app/components/misc/Pagination";
 
 function Manage_Thesis() {
   return (
@@ -8,91 +9,6 @@ function Manage_Thesis() {
       <div className="content-body">
         <div className="container-fluid">
           <div className="row">
-            {/* <div className=" col-lg-12">
-              <div className="card">
-                <div className="card-header">
-                  <h4 className="card-title">Manage Thesis</h4>
-                </div>
-                <div className="card-body">
-                  <div className="basic-form">
-                    <form>
-                      <div className="row">
-                        <div className="mb-3 col-md-6">
-                          <label className="form-label">Title</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter Title"
-                          />
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="mb-3 col-md-6">
-                          <label className="form-label">Author</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter Author Name"
-                          />
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="mb-3 col-md-6">
-                          <label className="form-label">Caterogy</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Enter Category"
-                          />
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="mb-3 col-md-6">
-                          <label className="form-label">Keywords</label>
-                          
-                           <select id="multi-value-select" multiple="multiple">
-                                    <option selected="selected">orange</option>
-                                    <option>white</option>
-                                    <option selected="selected">purple</option>
-                                </select>
-                        </div>
-                      </div>
-                      <div className="row"></div>
-                      <div className="row">
-                        <label className="form-label">Abstract</label>
-                        <div className="basic-form">
-                          <div className="mb-3">
-                            <textarea
-                              className="form-control"
-                              rows={8}
-                              id="comment"
-                              defaultValue={""}
-                            />
-                          </div>
-                        </div>
-                        <div className="mb-3 col-md-6">
-                          <label className="form-label">Status</label>
-                          <select
-                            id="inputState"
-                            className="default-select form-control wide"
-                            defaultValue="Choose Role"
-                          >
-                            <option disabled>Choose Status</option>
-                            <option>Pending</option>
-                            <option>Accepted</option>
-                            <option>Rejected</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <button type="submit" className="btn btn-primary">
-                        Edit Thesis
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <ManageThesisForm />
 
             <div className="col-lg-12">
@@ -402,6 +318,7 @@ function Manage_Thesis() {
                 </div>
               </div>
             </div>
+            <Pagination />
           </div>
         </div>
       </div>

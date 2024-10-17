@@ -31,7 +31,7 @@ function SubmitThesisForm() {
           <div className="basic-form">
             <form className="needs-validation" noValidate>
               <div className="row">
-                <div className="mb-3 col-md-6">
+                <div className="mb-3 ">
                   <label className="form-label">Title</label>
                   <input
                     type="text"
@@ -43,21 +43,29 @@ function SubmitThesisForm() {
                 </div>
               </div>
               <div className="row">
-                <div className="mb-3 col-md-6">
-                  <label className="form-label">Author</label>
-                  <input
-                    type="text"
+                <div className="mb-3 ">
+                  <label className="form-label">Author Name</label>
+                  <select
+                    id="inputState"
                     className="form-control"
-                    placeholder="Enter Author Name"
+                    defaultValue=""
                     required
-                  />
-                  <div className="invalid-feedback">
-                    Please enter a Author Name.
-                  </div>
+                  >
+                    <option value="" disabled>
+                      Select Author
+                    </option>
+                    <option>Mark</option>
+                    <option>David</option>
+                    <option>Susan</option>
+                    <option>Emma</option>
+                    <option>Michael</option>
+                    <option>Brad</option>
+                  </select>
+                  <div className="invalid-feedback">Please select a Author</div>
                 </div>
               </div>
               <div className="row">
-                <div className="mb-3 col-md-6">
+                <div className="mb-3 ">
                   <label className="form-label">Category</label>
                   <select
                     id="inputState"
@@ -78,13 +86,13 @@ function SubmitThesisForm() {
                 </div>
               </div>
               <div className="row">
-                <div className="mb-3 col-md-6">
+                <div className="mb-3 ">
                   <label className="form-label">Keywords</label>
                   <select
                     required
                     className="form-control"
                     id="multi-value-select"
-                    multiple="multiple"
+                    multiple={true}
                   >
                     <option>ML</option>
                     <option>AI</option>
@@ -115,7 +123,7 @@ function SubmitThesisForm() {
 
                 <div className="mb-3">
                   <label htmlFor="formFileSm" className="form-label">
-                    Input file
+                    Input file(.pdf,max size:10MB)
                   </label>
                   <input
                     required
@@ -127,9 +135,12 @@ function SubmitThesisForm() {
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary">
-                Submit Thesis
-              </button>
+              <div className="d-flex justify-content-end">
+                {" "}
+                <button type="submit" className="btn btn-primary">
+                  Submit Thesis
+                </button>
+              </div>
             </form>
           </div>
         </div>

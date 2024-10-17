@@ -115,7 +115,7 @@
 				  fontSize: '13px',
 				  fontFamily: 'poppins',
 				  fontWeight: 100,
-				  cssClass: 'apexcharts-xaxis-label',
+				//   cssClass: 'apexcharts-xaxis-label',
 				},
 			  },
 			  crosshairs: {
@@ -130,7 +130,7 @@
 					  fontSize: '13px',
 					   fontFamily: 'poppins',
 					  fontWeight: 100,
-					  cssClass: 'apexcharts-xaxis-label',
+					//   cssClass: 'apexcharts-xaxis-label',
 				  },
 				},
 			},

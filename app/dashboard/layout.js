@@ -48,6 +48,7 @@ function layout({ children }) {
         <DashBoardHeader onToggle={handleToggle} />
         <NavBar />
         {children}
+        <Footer />
       </div>
 
       <>

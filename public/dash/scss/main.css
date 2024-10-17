@@ -15731,9 +15731,7 @@ svg.pulse-svg .third-circle {
   padding-left: 0;
   padding-right: 20px;
 }
-[direction="rtl"] .apexcharts-legend-text {
-  margin: 4px;
-}
+
 [direction="rtl"] .doctor-info-details .media-body {
   padding-left: 0;
   padding-right: 40px;
@@ -15793,9 +15791,7 @@ svg.pulse-svg .third-circle {
 [direction="rtl"] .check-switch .custom-control-label:before {
   right: -35px !important;
 }
-[direction="rtl"] .bar-chart .apexcharts-yaxis {
-  transform: translatex(101%);
-}
+
 [direction="rtl"] .detault-daterange .input-group-text {
   padding: 0.532rem 0.75rem;
   padding-right: auto;
@@ -15804,9 +15800,7 @@ svg.pulse-svg .third-circle {
 [direction="rtl"] .form-wrapper .input-group .form-control {
   text-align: left;
 }
-[direction="rtl"] .timeline-chart .apexcharts-yaxis {
-  transform: translateX(0);
-}
+
 [direction="rtl"] .card-table td:first-child {
   padding-right: 30px;
   padding-left: 10px;
@@ -15969,10 +15963,7 @@ svg.pulse-svg .third-circle {
     border-color: transparent;
   }
 }
-[direction="rtl"] #revenueMap .apexcharts-yaxis,
-[direction="rtl"] #customerMapkm .apexcharts-yaxis {
-  transform: translateX(0px);
-}
+
 [direction="rtl"] .mail-list .list-group-item i {
   padding-right: 0;
   padding-left: 0.625rem;
@@ -32205,9 +32196,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-theme-version="dark"] .toggle-switch {
   color: #fff;
 }
-[data-theme-version="dark"] .bar-chart .apexcharts-text tspan {
-  fill: #969ba0;
-}
+
 [data-theme-version="dark"] .bar-chart line {
   stroke: #2e2e42;
 }
@@ -32324,9 +32313,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-theme-version="dark"] .dark-btn svg path {
   stroke: #fff;
 }
-[data-theme-version="dark"] .bar-chart .apexcharts-legend-text {
-  color: #fff !important;
-}
+
 [data-theme-version="dark"] .Sales tspan {
   fill: #fff;
 }
@@ -45590,9 +45577,7 @@ table.dataTable tbody td {
   padding-left: 0;
   padding-right: 20px;
 }
-[direction="rtl"] .apexcharts-legend-text {
-  margin: 4px;
-}
+
 [direction="rtl"] .doctor-info-details .media-body {
   padding-left: 0;
   padding-right: 40px;
@@ -45652,9 +45637,7 @@ table.dataTable tbody td {
 [direction="rtl"] .check-switch .custom-control-label:before {
   right: -35px !important;
 }
-[direction="rtl"] .bar-chart .apexcharts-yaxis {
-  transform: translatex(101%);
-}
+
 [direction="rtl"] .detault-daterange .input-group-text {
   padding: 0.532rem 0.75rem;
   padding-right: auto;
@@ -45663,9 +45646,7 @@ table.dataTable tbody td {
 [direction="rtl"] .form-wrapper .input-group .form-control {
   text-align: left;
 }
-[direction="rtl"] .timeline-chart .apexcharts-yaxis {
-  transform: translateX(0);
-}
+
 [direction="rtl"] .card-table td:first-child {
   padding-right: 30px;
   padding-left: 10px;
@@ -45828,10 +45809,7 @@ table.dataTable tbody td {
     border-color: transparent;
   }
 }
-[direction="rtl"] #revenueMap .apexcharts-yaxis,
-[direction="rtl"] #customerMapkm .apexcharts-yaxis {
-  transform: translateX(0px);
-}
+
 [direction="rtl"] .mail-list .list-group-item i {
   padding-right: 0;
   padding-left: 0.625rem;
@@ -46490,9 +46468,7 @@ html[dir="rtl"]
 [data-theme-version="dark"] .toggle-switch {
   color: #fff;
 }
-[data-theme-version="dark"] .bar-chart .apexcharts-text tspan {
-  fill: #969ba0;
-}
+
 [data-theme-version="dark"] .bar-chart line {
   stroke: #2e2e42;
 }
@@ -46609,9 +46585,7 @@ html[dir="rtl"]
 [data-theme-version="dark"] .dark-btn svg path {
   stroke: #fff;
 }
-[data-theme-version="dark"] .bar-chart .apexcharts-legend-text {
-  color: #fff !important;
-}
+
 [data-theme-version="dark"] .Sales tspan {
   fill: #fff;
 }

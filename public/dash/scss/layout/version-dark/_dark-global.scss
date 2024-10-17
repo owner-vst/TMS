@@ -374,14 +374,7 @@
 	.toggle-switch{
 		color:$white;
 	}
-	.bar-chart{
-		.apexcharts-text tspan{
-			fill:#969ba0;
-		}
-		line{
-			stroke:$d-border;
-		}
-	}
+	
 	.coin-card{
 		background: #0f6a62; 
 		background: -moz-linear-gradient(left,  #0f6a62 0%, #084355 100%); 
@@ -479,11 +472,7 @@
 				
 		}	
 	}
-	.bar-chart{
-		.apexcharts-legend-text{
-			color:$white!important;	
-		}	
-	}
+	
 	.Sales{
 		tspan{
 			fill:$white;	

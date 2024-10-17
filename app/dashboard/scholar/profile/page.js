@@ -1,3 +1,4 @@
+import ManageUserForm from "@/app/components/Forms/ManageUserForm";
 import UpdateProfile from "@/app/components/Forms/UpdateProfile";
 
 function Profile() {
@@ -11,7 +12,7 @@ function Profile() {
                 <div className="card card-bx author-profile m-b30">
                   <div className="card-body">
                     <div className="p-5">
-                      <div className="author-profile">
+                      <div className="author-profile mt-4">
                         <div className="author-media">
                           <img src="/dash/images/profile/pic1.jpg" alt="img" />
                           <div
@@ -25,6 +26,8 @@ function Profile() {
                             <i className="fa fa-camera" />
                           </div>
                         </div>
+                        <br />
+                        <br />
                         <div className="author-info">
                           <h6 className="title">John</h6>
                           <span>Admin</span>
@@ -33,6 +36,12 @@ function Profile() {
                     </div>
                     <div className="info-list">
                       <ul>
+                        <li>
+                          Fisrt Name<span>John</span>
+                        </li>
+                        <li>
+                          Last Name<span>Doe</span>
+                        </li>
                         <li>
                           DOB<span>06-01-1997</span>
                         </li>
@@ -44,6 +53,15 @@ function Profile() {
                         </li>
                         <li>
                           Email<span>demo@gmail.com</span>
+                        </li>
+                        <li>
+                          Joined<span>2022-05-01</span>
+                        </li>
+                        <li>
+                          Thesis<span>12</span>
+                        </li>
+                        <li>
+                          Downloads<span>18</span>
                         </li>
                         <li>
                           Address<span>123 Main St, New York, NY 10001</span>
@@ -60,11 +78,10 @@ function Profile() {
                   <h6 className="title">Update Profile</h6>
                 </div>
                 <div className="card-body">
-          <div className="basic-form">
-          <UpdateProfile />
-          </div>
-          </div>
-                
+                  <div className="basic-form">
+                    <UpdateProfile />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

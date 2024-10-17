@@ -1,6 +1,10 @@
+
 import SubmitThesisForm from "@/app/components/Forms/SubmitThesisForm";
+import AccordionComp from "@/app/components/misc/AccordionComp";
+
 
 function Submit_Thesis() {
+
   return (
     <div className="content-body">
       <div className="container-fluid">
@@ -101,7 +105,7 @@ function Submit_Thesis() {
                   className="m-0 subtitle"
                   href="https://grad.ucsd.edu/academics/preparing-to-graduate/dissertation-thesis-template.html"
                 >
-                  Click here to see template
+                  Download Template
                 </a>
                 <div
                   className="accordion accordion-no-gutter accordion-bordered"
@@ -109,7 +113,7 @@ function Submit_Thesis() {
                 >
                   <div className="accordion-item">
                     <div
-                      className="accordion-header  rounded-lg"
+                      className="accordion-header collapsed rounded-lg"
                       id="accord-4One"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse4One"
@@ -124,7 +128,7 @@ function Submit_Thesis() {
                     </div>
                     <div
                       id="collapse4One"
-                      className="collapse accordion__body show"
+                      className="collapse accordion__body "
                       aria-labelledby="accord-4One"
                       data-bs-parent="#accordion-four"
                     >
@@ -283,6 +287,8 @@ function Submit_Thesis() {
                     </div>
                   </div>
                 </div>
+               {/* <AccordionComp/> */}
+
               </div>
             </div>
           </div>

@@ -87,7 +87,7 @@ function ValidationsForm() {
                       required
                       className="form-control"
                       id="multi-value-select"
-                      multiple="multiple"
+                      multiple={true}
                     >
                       <option>ML</option>
                       <option>AI</option>

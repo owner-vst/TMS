@@ -1,63 +1,11 @@
 import ManagePeerForm from "@/app/components/Forms/ManagePeerForm";
+import Pagination from "@/app/components/misc/Pagination";
 
 function Manage_Peer() {
   return (
     <div className="content-body">
       <div className="container-fluid">
         <div className="row">
-          {/* <div className="col-xl-6 col-lg-12">
-                <div className="card">
-                  <div className="card-header">
-                    <h4 className="card-title">Manage Peer Review</h4>
-                  </div>
-                  <div className="card-body">
-                    <div className="basic-form">
-                      <form>
-                        <div className="row">
-                          <div className="mb-3 col-md-6">
-                            <label className="form-label">Thesis Name</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="Enter Title"
-                            />
-                          </div>
-                        </div>
-                        
-                        <div className="row">
-                          <div className="mb-3 col-md-6">
-                            <label className="form-label">Date</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="Enter Date"
-                            />
-                          </div>
-                        </div>
-                        <div className="row"></div>
-                        <div className="row">
-                          <label className="form-label">Message</label>
-                          <div className="basic-form">
-                            <div className="mb-3">
-                              <textarea
-                                className="form-control"
-                                rows={8}
-                                id="comment"
-                                defaultValue={""}
-                              />
-                            </div>
-                          </div>
-                          
-                        </div>
-  
-                        <button type="submit" className="btn btn-primary">
-                          Edit Peer Review
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
           <ManagePeerForm />
           <div className="col-lg-12">
             <div className="card">
@@ -80,6 +28,9 @@ function Manage_Peer() {
                           <strong>Review</strong>
                         </th>
                         <th>
+                          <strong>Status</strong>
+                        </th>
+                        <th>
                           <strong>Date</strong>
                         </th>
 
@@ -94,6 +45,7 @@ function Manage_Peer() {
                         <td>AI in health care</td>
 
                         <td>The use of AI in health care</td>
+                        <td>Pending</td>
                         <td>2022-05-01</td>
                         <td>
                           <div className="dropdown">
@@ -149,6 +101,7 @@ function Manage_Peer() {
                         <td>Machine Learning in Education</td>
 
                         <td>Leveraging ML to enhance learning outcomes</td>
+                        <td>Pending</td>
                         <td>2022-05-02</td>
                         <td>
                           <div className="dropdown">
@@ -206,6 +159,7 @@ function Manage_Peer() {
                         <td>
                           Exploring blockchain for enhancing data security
                         </td>
+                        <td>Approved</td>
                         <td>2022-05-03</td>
                         <td>
                           <div className="dropdown">
@@ -261,6 +215,7 @@ function Manage_Peer() {
                         <td>Climate Change Modeling</td>
 
                         <td>AI-based climate prediction models</td>
+                        <td>Rejected</td>
                         <td>2022-05-04</td>
                         <td>
                           <div className="dropdown">
@@ -315,6 +270,7 @@ function Manage_Peer() {
               </div>
             </div>
           </div>
+          <Pagination />
         </div>
       </div>
     </div>

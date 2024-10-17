@@ -1,4 +1,6 @@
 import Comment from "@/app/components/Forms/Comment";
+import Pagination from "@/app/components/misc/Pagination";
+import Redender from "@/app/components/misc/Render";
 import RenderPdf from "@/app/components/pdfRender/RenderPdf";
 
 function View_Thesis() {
@@ -139,6 +141,9 @@ function View_Thesis() {
                     <table className="table table-responsive-md">
                       <thead>
                         <tr>
+                          <th>
+                            <strong>ID</strong>
+                          </th>
                           <th>
                             <strong>Title</strong>
                           </th>
@@ -364,6 +369,7 @@ function View_Thesis() {
                       </tbody>
                     </table>
                   </div>
+                  <Pagination />
                 </div>
               </div>
             </div>
@@ -373,6 +379,7 @@ function View_Thesis() {
               <div className="col-xl-12">
                 <div className="card">
                   <RenderPdf />
+                  {/* <Redender/> */}
                   <div className="card-footer border-0">
                     <div className="clear" id="comment-list">
                       <div className="comments-area" id="comments">
@@ -384,13 +391,12 @@ function View_Thesis() {
                           <ol className="comment-list">
                             <li className="comment">
                               <div className="comment-body">
-                                <div className="comment-author vcard">
-                                  <img
-                                    className="avatar photo"
-                                    src="/assets/images/avatar/user.png"
-                                    alt="Image"
-                                  />
-                                </div>
+                                <img
+                                  className="avatar photo"
+                                  src="/assets/images/avatar/user.png"
+                                  alt="Image"
+                                  width="40"
+                                />
                                 <cite className="fn">David</cite>
                                 <p>
                                   Good to know that you are working on this
@@ -401,13 +407,12 @@ function View_Thesis() {
                             </li>
                             <li className="comment">
                               <div className="comment-body">
-                                <div className="comment-author vcard">
-                                  <img
-                                    className="avatar photo"
-                                    src="/assets/images/avatar/user.png"
-                                    alt="Image"
-                                  />
-                                </div>
+                                <img
+                                  className="avatar photo"
+                                  src="/assets/images/avatar/user.png"
+                                  alt="Image"
+                                  width="40"
+                                />
                                 <cite className="fn">Mark</cite>
                                 <p>
                                   Deep insights on ai influence on healthcare
@@ -416,13 +421,12 @@ function View_Thesis() {
                             </li>
                             <li className="comment">
                               <div className="comment-body">
-                                <div className="comment-author vcard">
-                                  <img
-                                    className="avatar photo"
-                                    src="/assets/images/avatar/user.png"
-                                    alt="Image"
-                                  />
-                                </div>
+                                <img
+                                  className="avatar photo"
+                                  src="/assets/images/avatar/user.png"
+                                  alt="Image"
+                                  width="40"
+                                />
                                 <cite className="fn">Chris</cite>
                                 <p>
                                   I am working on this project and I would like
@@ -432,15 +436,13 @@ function View_Thesis() {
                               </div>
                             </li>
                           </ol>
-                          {/* comment list END */}
-                          {/* Form */}
-                          <div className="comment-respond" id="respond">
-                            <div className="widget-title style-1">
-                              <h4 className="title" id="reply-title">
-                                Leave Your Comment
-                              </h4>
-                            </div>
+
+                          <div className="widget-title style-1">
+                            <h4 className="title" id="reply-title">
+                              Leave Your Comment
+                            </h4>
                           </div>
+
                           <Comment />
                           {/* Form */}
                         </div>

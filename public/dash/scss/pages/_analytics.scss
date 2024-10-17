@@ -1,12 +1,4 @@
-.bar-chart{
-	.apexcharts-legend-text{
-		.value{
-			margin-left:1.25rem;
-			font-size:1.25rem;
-			font-weight:700;
-		}
-	}		
-}
+
 .donut-chart-sale{
 	small i{
 		font-size: 1.75rem;
@@ -37,20 +29,5 @@
 		width:3em;	
 	}	
 }
-.bar-chart{
-	.apexcharts-bar-series{
-		.apexcharts-series:nth-child(2){
-			path{
-				fill:var(--primary);
-			}
-		}
-	}
-}
 
-.Sales-1{
-	.apexcharts-series{
-		.apexcharts-line{
-			stroke:var(--primary);
-		}
-	}
-}
+

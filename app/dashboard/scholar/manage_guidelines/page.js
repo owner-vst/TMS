@@ -1,61 +1,11 @@
 import ManageGuidelineForm from "@/app/components/Forms/ManageGuidelineForm";
+import Pagination from "@/app/components/misc/Pagination";
 
 function Manage_Guidelines() {
   return (
     <div className="content-body">
       <div className="container-fluid">
         <div className="row">
-          {/* <div className="col-xl-6 col-lg-12">
-            <div className="card">
-              <div className="card-header">
-                <h4 className="card-title">Manage Guidelines and Template</h4>
-              </div>
-              <div className="card-body">
-                <div className="basic-form">
-                  <form>
-                    <div className="row">
-                      <div className="mb-3 col-md-6">
-                        <label className="form-label">Title</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Title"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <label className="form-label">Rule</label>
-                      <div className="basic-form">
-                        <div className="mb-3">
-                          <textarea
-                            className="form-control"
-                            rows={2}
-                            id="comment"
-                            defaultValue={""}
-                          />
-                        </div>
-                      </div>
-                      <div className="mb-3">
-                        <label htmlFor="formFileSm" className="form-label">
-                          Input File
-                        </label>
-                        <input
-                          className="form-control form-control-sm"
-                          id="formFileSm"
-                          type="file"
-                        />
-                      </div>
-                    </div>
-
-                    <button type="submit" className="btn btn-primary">
-                      Edit Guidelines
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <ManageGuidelineForm />
           <div className="col-lg-12">
             <div className="card">
@@ -77,6 +27,9 @@ function Manage_Guidelines() {
                         <th>
                           <strong>Description</strong>
                         </th>
+                        <th>
+                          <strong>Added By</strong>
+                        </th>
 
                         <th>Action</th>
                       </tr>
@@ -89,7 +42,7 @@ function Manage_Guidelines() {
                         <td>Layout</td>
 
                         <td>Should be in not more than 3 columns per page</td>
-
+                        <td>Dr. Bobby Schol</td>
                         <td>
                           <div className="dropdown">
                             <button
@@ -144,7 +97,7 @@ function Manage_Guidelines() {
                         <td>Size</td>
 
                         <td>Should not exceed 50mb</td>
-
+                        <td> Dr.Brad Pitt</td>
                         <td>
                           <div className="dropdown">
                             <button
@@ -199,6 +152,7 @@ function Manage_Guidelines() {
                         <td>Pages</td>
 
                         <td>Not more than 150 pages</td>
+                        <td>Dr.Mark Schol</td>
 
                         <td>
                           <div className="dropdown">
@@ -254,7 +208,7 @@ function Manage_Guidelines() {
                         <td>Format</td>
 
                         <td>Should be pdf</td>
-
+                        <td>Dr.Danny Devito</td>
                         <td>
                           <div className="dropdown">
                             <button
@@ -308,6 +262,7 @@ function Manage_Guidelines() {
               </div>
             </div>
           </div>
+          <Pagination />
         </div>
       </div>
     </div>

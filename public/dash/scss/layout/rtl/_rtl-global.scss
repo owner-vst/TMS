@@ -64,9 +64,7 @@
 			padding-left: 0;
 			padding-right: 20px;
 		}
-		.apexcharts-legend-text{
-			margin:4px;
-		}
+		
 		.doctor-info-details .media-body{
 		    padding-left: 0;
 		    padding-right: 40px;
@@ -130,11 +128,7 @@
 				right: -35px !important;
 			}
 		}
-		.bar-chart{
-			.apexcharts-yaxis{
-				transform: translatex(101%);
-			}
-		}
+		
 		
 		.detault-daterange .input-group-text{
 			padding: 0.532rem 0.75rem;
@@ -145,11 +139,7 @@
 			text-align:left;
 		}
 		
-		.timeline-chart{
-			.apexcharts-yaxis{
-				transform:translateX(0);
-			}
-		}		
+		
 		.card-table td{
 			&:first-child{
 				padding-right:30px;
@@ -311,11 +301,7 @@
 			}
 		}
 		
-		#revenueMap,#customerMapkm{
-			.apexcharts-yaxis{
-				transform: translateX(0px);
-			}
-		}
+		
 		.mail-list .list-group-item i{
 			padding-right: 0;
 			padding-left: 0.625rem;

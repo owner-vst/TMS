@@ -43,25 +43,9 @@ function ManageGuidelineForm() {
                   />
                   <div className="invalid-feedback">Please enter a Title.</div>
                 </div>
-              </div>
-
-              <div className="row">
-                <label className="form-label">Description</label>
-                <div className="basic-form">
-                  <div className="mb-3">
-                    <textarea
-                      required
-                      className="form-control"
-                      rows={2}
-                      id="comment"
-                      defaultValue={""}
-                    />
-                    <div className="invalid-feedback">Please Description.</div>
-                  </div>
-                </div>
-                <div className="mb-3">
+                <div className="mb-3 col-md-6">
                   <label htmlFor="formFileSm" className="form-label">
-                    Input File
+                    Input File(.pdf,max size:10MB)
                   </label>
                   <input
                     className="form-control form-control-sm"
@@ -73,9 +57,29 @@ function ManageGuidelineForm() {
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary">
-                Edit Guidelines
-              </button>
+              <div className="row">
+                <label className="form-label">Description</label>
+                <div className="basic-form">
+                  <div className="mb-3">
+                    <textarea
+                      required
+                      placeholder="Enter Description"
+                      className="form-control"
+                      rows={2}
+                      id="comment"
+                      defaultValue={""}
+                    />
+                    <div className="invalid-feedback">Please Description.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="d-flex justify-content-end">
+                {" "}
+                <button type="submit" className="btn btn-primary">
+                  Create Guidelines
+                </button>
+              </div>
             </form>
           </div>
         </div>

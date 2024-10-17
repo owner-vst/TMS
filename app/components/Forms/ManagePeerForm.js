@@ -45,7 +45,7 @@ function ManagePeerForm() {
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Date</label>
                   <input
-                    type="text"
+                    type="date"
                     className="form-control"
                     placeholder="Enter Date"
                     required
@@ -54,29 +54,44 @@ function ManagePeerForm() {
                 </div>
               </div>
 
-              
-              <div className="row"></div>
               <div className="row">
-                <label className="form-label">Review</label>
-                <div className="basic-form">
-                  <div className="mb-3">
-                    <textarea
-                      required
-                      className="form-control"
-                      rows={8}
-                      id="comment"
-                      defaultValue={""}
-                    />
-                    <div className="invalid-feedback">
-                      Please enter Message.
-                    </div>
+                <div className="mb-3 col-md-6">
+                  <label className="form-label">Review</label>
+                  <input
+                    required
+                    className="form-control"
+                    type="text"
+                    placeholder="Enter Review"
+                  />
+                  <div className="invalid-feedback">Please enter Message.</div>
+                </div>
+                <div className="mb-3 col-md-6">
+                  <label className="form-label">Status</label>
+                  <select
+                    name="status"
+                     className="form-control"
+                    defaultValue=""
+                    required
+                  >
+                    <option value="" disabled>
+                      Choose Status
+                    </option>
+                    <option>Pending</option>
+                    <option>Approv</option>
+                    <option>Reject</option>
+                  </select>
+                  <div className="invalid-feedback">
+                    Please select a Status.
                   </div>
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary">
-                Edit Peer Review
-              </button>
+              <div className="d-flex justify-content-end">
+                {" "}
+                <button type="submit" className="btn btn-primary">
+                  Review Thesis
+                </button>
+              </div>
             </form>
           </div>
         </div>

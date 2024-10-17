@@ -35,7 +35,7 @@ function ManageThesisForm() {
             <div className="card-body">
               <div className="basic-form">
                 <div className="row">
-                  <div className="mb-3 col-md-6">
+                  <div className="mb-3 ">
                     <label className="form-label">Title</label>
                     <input
                       type="text"
@@ -45,18 +45,6 @@ function ManageThesisForm() {
                     />
                     <div className="invalid-feedback">
                       Please enter a Title.
-                    </div>
-                  </div>
-                  <div className="mb-3 col-md-6">
-                    <label className="form-label">Author</label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter Author Name"
-                      required
-                    />
-                    <div className="invalid-feedback">
-                      Please enter an Author.
                     </div>
                   </div>
                 </div>
@@ -87,7 +75,7 @@ function ManageThesisForm() {
                       required
                       className="form-control"
                       id="multi-value-select"
-                      multiple="multiple"
+                      multiple={true}
                     >
                       <option>ML</option>
                       <option>AI</option>
@@ -98,19 +86,7 @@ function ManageThesisForm() {
                     </div>
                   </div>
                 </div>
-
                 <div className="row">
-                  <div className="mb-3 col-md-6">
-                    <label className="form-label">Abstract</label>
-                    <textarea
-                      className="form-control"
-                      rows={8}
-                      id="comment"
-                      defaultValue={""}
-                      required
-                    />
-                  </div>
-
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Status</label>
                     <select
@@ -130,11 +106,49 @@ function ManageThesisForm() {
                       Please select a Status.
                     </div>
                   </div>
+                  <div className="mb-3 col-md-6">
+                    <label className="form-label">Author Name</label>
+                    <select
+                      id="inputState"
+                      className="form-control"
+                      defaultValue=""
+                      required
+                    >
+                      <option value="" disabled>
+                        Select Author
+                      </option>
+                      <option>Mark</option>
+                      <option>David</option>
+                      <option>Susan</option>
+                      <option>Emma</option>
+                      <option>Michael</option>
+                      <option>Brad</option>
+                    </select>
+                    <div className="invalid-feedback">
+                      Please select a Author
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="mb-3 ">
+                    <label className="form-label">Abstract</label>
+                    <textarea
+                      className="form-control"
+                      rows={8}
+                      id="comment"
+                      placeholder="Enter Abstract"
+                      defaultValue={""}
+                      required
+                    />
+                  </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary">
-                  Edit Thesis
-                </button>
+                <div className="d-flex justify-content-end">
+                  {" "}
+                  <button type="submit" className="btn btn-primary">
+                    Manage Thesis
+                  </button>
+                </div>
               </div>
             </div>
           </div>

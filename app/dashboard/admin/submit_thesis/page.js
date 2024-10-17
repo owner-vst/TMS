@@ -1,4 +1,5 @@
 import SubmitThesisForm from "@/app/components/Forms/SubmitThesisForm";
+import Pagination from "@/app/components/misc/Pagination";
 
 function Submit_Thesis() {
   return (
@@ -374,6 +375,7 @@ function Submit_Thesis() {
               </div>
             </div>
           </div>
+          <Pagination />
         </div>
       </div>
     </div>

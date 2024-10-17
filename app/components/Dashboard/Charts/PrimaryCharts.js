@@ -16,44 +16,44 @@ const data = [
   {
     name: "Total",
     count: 1006,
-    fill: "#ff5c00",
+    fill: "#4885ed",
   },
   {
     name: "AI",
     count: 530,
-    fill: "#145650",
+    fill: "#1a66e8",
   },
   {
     name: "ML",
     count: 430,
-    fill: "#f93a0b",
+    fill: "#0e3d8e",
   },
   {
     name: "NLP",
     count: 730,
-    fill: "#F6AD2E",
+    fill: "#3398fb",
   },
 ];
 const data2 = [
   {
     name: "Total",
     count: 506,
-    fill: "#ff5c00",
+    fill: "#4885ed",
   },
   {
     name: "AI",
     count: 330,
-    fill: "#145650",
+    fill: "#1a66e8",
   },
   {
     name: "ML",
     count: 430,
-    fill: "#f93a0b",
+    fill: "#0e3d8e",
   },
   {
     name: "NLP",
     count: 167,
-    fill: "#F6AD2E",
+    fill: "#3398fb",
   },
 ];
 const data1 = [
@@ -146,7 +146,7 @@ function PrimaryCharts() {
             </div>
             <div className="card-body">
               <div className="flot-chart">
-                <ResponsiveContainer width="100%" height="90%">
+              <ResponsiveContainer width="100%" height="90%">
                   <BarChart width={500} height={300} data={data1} barSize={20}>
                     <CartesianGrid
                       strokeDasharray="3 3"
@@ -180,7 +180,7 @@ function PrimaryCharts() {
                     />
                     <Bar
                       dataKey="views"
-                      fill="#ff5c00"
+                      fill="#1a66e8"
                       legendType="circle"
                       radius={[10, 10, 0, 0]}
                     />
@@ -237,7 +237,7 @@ function PrimaryCharts() {
                     />
                     <Bar
                       dataKey="views"
-                      fill="#ff5c00"
+                      fill="#1a66e8"
                       legendType="circle"
                       radius={[10, 10, 0, 0]}
                     />
