@@ -26,7 +26,12 @@ function Forgot() {
   }, []);
 
   return (
-    <div className="vh-100">
+    <div className="vh-100"
+    style={{
+      backgroundImage: "url('/dash/images/bg.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <div className="authentication h-100">
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">
