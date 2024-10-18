@@ -1,6 +1,7 @@
 
 import SubmitThesisForm from "@/app/components/Forms/SubmitThesisForm";
 import AccordionComp from "@/app/components/misc/AccordionComp";
+import Pagination from "@/app/components/misc/Pagination";
 
 
 function Submit_Thesis() {
@@ -182,8 +183,11 @@ function Submit_Thesis() {
                     </tbody>
                   </table>
                 </div>
+               
               </div>
+             
             </div>
+            <Pagination/>
           </div>
         </div>
       </div>
