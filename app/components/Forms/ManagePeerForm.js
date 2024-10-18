@@ -97,7 +97,7 @@ function ManagePeerForm({ mode, onCreate }) {
               <div className="d-flex justify-content-end">
                 {" "}
                 <button type="submit" className="btn btn-primary">
-                  {mode === "edit" ? "Edit" : "Create"} Thesis
+                  {mode === "edit" ? "Edit" : "Create"} Review
                 </button>
               </div>
             </form>
