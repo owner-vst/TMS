@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-function ManageThesisForm() {
+function ManageThesisForm({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -23,7 +23,10 @@ function ManageThesisForm() {
       });
     })();
   }, []);
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <div>
       <form className="needs-validation" noValidate>
@@ -146,8 +149,8 @@ function ManageThesisForm() {
                 <div className="d-flex justify-content-end">
                   {" "}
                   <button type="submit" className="btn btn-primary">
-                    Manage Thesis
-                  </button>
+                  {mode === "edit" ? "Edit" : "Create"} Thesis
+                </button>
                 </div>
               </div>
             </div>

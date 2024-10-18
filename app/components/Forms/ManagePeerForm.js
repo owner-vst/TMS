@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-function ManagePeerForm() {
+function ManagePeerForm({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -22,6 +22,10 @@ function ManagePeerForm() {
       });
     })();
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <div className="col-lg-12">
       <div className="card">
@@ -30,7 +34,11 @@ function ManagePeerForm() {
         </div>
         <div className="card-body">
           <div className="basic-form">
-            <form className="needs-validation" noValidate>
+            <form
+              className="needs-validation"
+              noValidate
+              onSubmit={handleSubmit}
+            >
               <div className="row">
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Thesis Name</label>
@@ -69,7 +77,7 @@ function ManagePeerForm() {
                   <label className="form-label">Status</label>
                   <select
                     name="status"
-                     className="form-control"
+                    className="form-control"
                     defaultValue=""
                     required
                   >
@@ -89,7 +97,7 @@ function ManagePeerForm() {
               <div className="d-flex justify-content-end">
                 {" "}
                 <button type="submit" className="btn btn-primary">
-                  Review Thesis
+                  {mode === "edit" ? "Edit" : "Create"} Thesis
                 </button>
               </div>
             </form>

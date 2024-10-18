@@ -25,7 +25,12 @@ function Signin() {
     })();
   }, []);
   return (
-    <div className="vh-100 main-bnr bg-light">
+    <div className="vh-100 main-bnr bg-light"
+    style={{
+      backgroundImage: "url('/dash/images/bg.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <div className="authentication h-100">
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">

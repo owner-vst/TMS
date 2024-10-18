@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-function ManageUserForm() {
+function ManageUserForm({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -23,7 +23,10 @@ function ManageUserForm() {
       });
     })();
   }, []);
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <div className="col-lg-12">
       <div className="card">
@@ -172,7 +175,7 @@ function ManageUserForm() {
               <div className="d-flex justify-content-end">
                 {" "}
                 <button type="submit" className="btn btn-primary">
-                  Edit User
+                  {mode === "edit" ? "Edit" : "Create"} User
                 </button>
               </div>
             </form>

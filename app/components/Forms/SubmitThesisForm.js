@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-function SubmitThesisForm() {
+function SubmitThesisForm({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -21,6 +21,10 @@ function SubmitThesisForm() {
       });
     })();
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <div className="col-xl-6 col-lg-12">
       <div className="card">
@@ -106,18 +110,16 @@ function SubmitThesisForm() {
               <div className="row"></div>
               <div className="row">
                 <label className="form-label">Abstract</label>
-                <div className="basic-form">
-                  <div className="mb-3">
-                    <textarea
-                      required
-                      className="form-control"
-                      rows={8}
-                      id="comment"
-                      defaultValue={""}
-                    />
-                    <div className="invalid-feedback">
-                      Please enter a Abstract.
-                    </div>
+
+                <div className="mb-3">
+                  <textarea
+                    required
+                    className="form-control"
+                    rows={8}
+                    id="comment"
+                  />
+                  <div className="invalid-feedback">
+                    Please enter a Abstract.
                   </div>
                 </div>
 
@@ -138,7 +140,7 @@ function SubmitThesisForm() {
               <div className="d-flex justify-content-end">
                 {" "}
                 <button type="submit" className="btn btn-primary">
-                  Submit Thesis
+                  Submit
                 </button>
               </div>
             </form>

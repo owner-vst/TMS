@@ -30,7 +30,7 @@ function DashBoardHeader({ onToggle }) {
     <div>
       <div className="nav-header">
         <Link href={`/dashboard/${role}`} className="brand-logo">
-          <Logo/>
+          <Logo />
         </Link>
         <a onClick={onToggle} className="nav-control">
           <div className="hamburger">
@@ -191,10 +191,15 @@ function DashBoardHeader({ onToggle }) {
                         src="/dash/images/profile/pic1.jpg"
                         alt="img"
                         className="profile-image"
+                        style={{
+                          width: '50px', // Adjust size as needed
+                          height: '50px', // Keep it square for a perfect circle
+                          borderRadius: '50%', // Makes the image round
+                          objectFit: 'cover' // Ensures the image covers the area without distortion
+                        }}
                       />
                       <div className="d-flex align-items-center sidebar-info ">
-                        {" "}
-                        {/* Added margin-left class */}
+                   
                         <div>
                           <span></span>
                           <span className="font-w400 d-block ">
@@ -205,10 +210,16 @@ function DashBoardHeader({ onToggle }) {
                     </div>
                   </a>
 
-                  <div className="dropdown-menu dropdown-menu-end">
+                  <div
+                    className={`dropdown-menu dropdown-menu-end ${
+                      isProfileOpen ? "show" : ""
+                    }`}
+                    style={{ marginTop: '190px' }} 
+                  >
                     <Link
                       href={`/dashboard/${role}/profile`}
                       className="dropdown-item ai-icon"
+                      style={{ whiteSpace: 'nowrap' }}
                     >
                       <svg
                         id="icon-user2"
@@ -229,7 +240,8 @@ function DashBoardHeader({ onToggle }) {
                       <span className="ms-2">Profile </span>
                     </Link>
 
-                    <Link href="/" className="dropdown-item ai-icon">
+                    <Link href="/" className="dropdown-item ai-icon"
+                    style={{ whiteSpace: 'nowrap' }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="text-danger"

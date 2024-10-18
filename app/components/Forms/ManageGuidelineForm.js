@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-function ManageGuidelineForm() {
+function ManageGuidelineForm({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -23,6 +23,10 @@ function ManageGuidelineForm() {
       });
     })();
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <div className="col-lg-12">
       <div className="card">
@@ -31,7 +35,7 @@ function ManageGuidelineForm() {
         </div>
         <div className="card-body">
           <div className="basic-form">
-            <form className="needs-validation" noValidate>
+            <form className="needs-validation" noValidate onSubmit={handleSubmit}>
               <div className="row">
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Title</label>
@@ -76,9 +80,10 @@ function ManageGuidelineForm() {
 
               <div className="d-flex justify-content-end">
                 {" "}
-                <button type="submit" className="btn btn-primary">
-                  Create Guidelines
-                </button>
+                <button type="submit"className="btn btn-primary" >{mode === "edit" ? "Edit" : "Create"}</button>
+      {/* {mode === "edit" && (
+        <button type="button" className="btn btn-primary" onClick={onCreate}>Cancel</button>
+      )} */}
               </div>
             </form>
           </div>

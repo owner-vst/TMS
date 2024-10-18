@@ -93,7 +93,7 @@ function Submit_Thesis() {
           </div> */}
           <SubmitThesisForm />
           <div className="col-xl-6">
-            <div className="card">
+            {/* <div className="card">
               <div className="card-header d-block">
                 <h4 className="card-title">Guidelines and Template</h4>
                 <p className="m-0 subtitle">
@@ -287,9 +287,14 @@ function Submit_Thesis() {
                     </div>
                   </div>
                 </div>
-               {/* <AccordionComp/> */}
+             
 
               </div>
+            </div> */}
+            <div className="card">
+           
+<AccordionComp/>
+
             </div>
           </div>
 

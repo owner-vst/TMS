@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-function UpdateProfile() {
+function UpdateProfile({ mode, onCreate }) {
   useEffect(() => {
     // Bootstrap validation setup
     (function () {
@@ -23,6 +23,10 @@ function UpdateProfile() {
       });
     })();
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(mode === "edit" ? "Editing" : "Creating");
+  };
   return (
     <form className="needs-validation" noValidate>
       <div className="row">
@@ -122,6 +126,7 @@ function UpdateProfile() {
       <div className="d-flex justify-content-end">
         {" "}
         <button type="submit" className="btn btn-primary">
+          {/* {mode === "edit" ? "Edit" : "Create"} Profile */}
           Update
         </button>
       </div>
