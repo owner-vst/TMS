@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "../Logo";
 
-function DashBoardHeader({ onToggle }) {
+function DashBoardHeader({ onToggle ,isMenuToggled}) {
   const [isNotificationOpen, setNotificationOpen] = useState(false);
   const [isProfileOpen, setProfileOpen] = useState(false);
   const [role, setRole] = useState(null);
@@ -30,7 +30,9 @@ function DashBoardHeader({ onToggle }) {
     <div>
       <div className="nav-header">
         <Link href={`/dashboard/${role}`} className="brand-logo">
-          <Logo />
+          {/* <Logo /> */}
+          <img src="/dash/icons/icon.png" alt="logo" />
+          {!isMenuToggled &&  <h3>ScholarVault</h3>}
         </Link>
         <a onClick={onToggle} className="nav-control">
           <div className="hamburger">
