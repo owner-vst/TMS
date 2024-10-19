@@ -11,7 +11,7 @@ function About() {
         <div className="container">
           <div className="dz-bnr-inr-entry">
             <h1>About Us</h1>
-            {/* Breadcrumb Row */}
+          
             <nav aria-label="breadcrumb" className="breadcrumb-row m-t15">
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -22,7 +22,7 @@ function About() {
                 </li>
               </ul>
             </nav>
-            {/* Breadcrumb Row End */}
+           
           </div>
         </div>
       </div>

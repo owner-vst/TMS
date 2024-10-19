@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 function Reset() {
   useEffect(() => {
-    // Bootstrap validation setup
+   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");

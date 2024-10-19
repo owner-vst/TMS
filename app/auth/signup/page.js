@@ -6,7 +6,7 @@ import Logo from "../../components/Logo";
 
 function signup() {
   useEffect(() => {
-    // Bootstrap validation setup
+    
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");

@@ -5,12 +5,11 @@ import { useEffect, useState } from "react";
 
 function NavBar() {
   const [role, setRole] = useState(null);
-  const pathname = usePathname(); // Use the usePathname hook to get the current path
-
+  const pathname = usePathname(); 
   useEffect(() => {
     if (pathname) {
-      const currentRole = pathname.split("/")[2]; // Extract 'admin', 'scholar', or 'user'
-      setRole(currentRole); // Set the role based on the path
+      const currentRole = pathname.split("/")[2]; 
+      setRole(currentRole); 
     }
   }, [pathname]);
 
@@ -103,7 +102,7 @@ function NavBar() {
     ],
   };
 
-  // Get the menu items for the current role
+
   const currentMenuItems = menuItems[role] || [];
 
   return (

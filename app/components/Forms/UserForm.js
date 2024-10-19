@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const UserForm = () => {
   useEffect(() => {
-    // Bootstrap validation setup
+    
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");

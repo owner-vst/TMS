@@ -23,24 +23,24 @@ function Trying() {
     })();
   }, []);
 
-  const [showMenu, setShowMenu] = useState(null); // Track which menu is open
+  const [showMenu, setShowMenu] = useState(null); 
 
   const toggleMenu = (id) => {
     if (showMenu === id) {
-      setShowMenu(null); // Close if already open
+      setShowMenu(null); 
     } else {
-      setShowMenu(id); // Open the selected menu
+      setShowMenu(id); 
     }
   };
 
   const handleEdit = (id) => {
     alert(`Edit item with ID: ${id}`);
-    setShowMenu(null); // Close the menu after the action
+    setShowMenu(null); 
   };
 
   const handleDelete = (id) => {
     alert(`Delete item with ID: ${id}`);
-    setShowMenu(null); // Close the menu after the action
+    setShowMenu(null); 
   };
 
   return (

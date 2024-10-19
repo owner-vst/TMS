@@ -9,12 +9,12 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
   const [isProfileOpen, setProfileOpen] = useState(false);
   const [role, setRole] = useState(null);
 
-  const pathname = usePathname(); // Use the usePathname hook to get the current path
+  const pathname = usePathname(); 
 
   useEffect(() => {
     if (pathname) {
-      const currentRole = pathname.split("/")[2]; // Extract 'admin', 'scholar', or 'user'
-      setRole(currentRole); // Set the role based on the path
+      const currentRole = pathname.split("/")[2]; 
+      setRole(currentRole); 
     }
   }, [pathname]);
 
@@ -30,7 +30,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
     <div>
       <div className="nav-header">
         <Link href={`/dashboard/${role}`} className="brand-logo">
-          {/* <Logo /> */}
+          
           <img src="/dash/icons/icon.png" alt="logo" />
           {!isMenuToggled &&  <h3>ScholarVault</h3>}
         </Link>
@@ -41,13 +41,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
             <span className="line" />
           </div>
         </a>
-        {/* <div className="nav-control">
-          <div className="hamburger">
-            <span className="line" />
-            <span className="line" />
-            <span className="line" />
-          </div>
-        </div> */}
+        
       </div>
 
       <div className="header">
@@ -61,7 +55,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                 <li className="nav-item dropdown notification_dropdown ">
                   <a
                     className="nav-link border border-white"
-                    onClick={toggleNotificationDropdown} // Add onClick event
+                    onClick={toggleNotificationDropdown} 
                     role="button"
                   >
                     <svg
@@ -137,49 +131,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                   </div>
                 </li>
 
-                {/* <li className="nav-item dropdown header-profile">
-                  <button
-                    className="nav-link border border-white"
-                    onClick={toggleProfileDropdown} // Add onClick event
-                    role="button"
-                    style={{ zIndex: isProfileOpen ? 5000 : 1 }} // Adjust z-index if needed
-                  >
-                    <img
-                      src="/dash/images/profile/pic1.jpg"
-                      width={20}
-                      alt="img"
-                    />
-                  </button>
-                  <div
-                    className={`dropdown-menu dropdown-menu-end ${
-                      isProfileOpen ? "show" : ""
-                    }`}
-                    style={{ zIndex: 1050 }} // Ensure the dropdown is above other content
-                  >
-                    <Link
-                      href="/"
-                      className="dropdown-item ai-icon"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-danger"
-                        width={18}
-                        height={18}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-                        <polyline points="16 17 21 12 16 7" />
-                        <line x1={21} y1={12} x2={9} y2={12} />
-                      </svg>
-                      <span className="ms-2">Logout</span>
-                    </Link>
-                  </div>
-                </li> */}
+                
                 <li className="nav-item dropdown header-profile">
                   <a
                     className="nav-link"
@@ -194,10 +146,10 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                         alt="img"
                         className="profile-image"
                         style={{
-                          width: '50px', // Adjust size as needed
-                          height: '50px', // Keep it square for a perfect circle
-                          borderRadius: '50%', // Makes the image round
-                          objectFit: 'cover' // Ensures the image covers the area without distortion
+                          width: '50px', 
+                          height: '50px', 
+                          borderRadius: '50%', 
+                          objectFit: 'cover' 
                         }}
                       />
                       <div className="d-flex align-items-center sidebar-info ">

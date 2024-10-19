@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function UpdateProfile({ mode, onCreate }) {
   useEffect(() => {
-    // Bootstrap validation setup
+   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -126,7 +126,7 @@ function UpdateProfile({ mode, onCreate }) {
       <div className="d-flex justify-content-end">
         {" "}
         <button type="submit" className="btn btn-primary">
-          {/* {mode === "edit" ? "Edit" : "Create"} Profile */}
+          
           Update
         </button>
       </div>

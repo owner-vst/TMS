@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function ManageGuidelineForm({ mode, onCreate }) {
   useEffect(() => {
-    // Bootstrap validation setup
+   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -81,9 +81,7 @@ function ManageGuidelineForm({ mode, onCreate }) {
               <div className="d-flex justify-content-end">
                 {" "}
                 <button type="submit"className="btn btn-primary" >{mode === "edit" ? "Edit" : "Create"}</button>
-      {/* {mode === "edit" && (
-        <button type="button" className="btn btn-primary" onClick={onCreate}>Cancel</button>
-      )} */}
+      
               </div>
             </form>
           </div>

@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 
 const AdvancedSearch = () => {
-  // State to manage search, selected categories, and the visibility of dropdowns
+  
   const [searchInput, setSearchInput] = useState("");
-  const [selectedCategories, setSelectedCategories] = useState([]); // Stores selected categories
-  const [visibleCategoryDropdown, setVisibleCategoryDropdown] = useState(null); // Controls dropdown visibility for categories
+  const [selectedCategories, setSelectedCategories] = useState([]); 
+  const [visibleCategoryDropdown, setVisibleCategoryDropdown] = useState(null); 
 
-  // Category options including Year
+ 
   const categoryOptions = {
     Topic: ["Science", "Engineering", "Humanities"],
     Author: ["Mark", "Sans", "Harris Edwinn"],
@@ -15,38 +15,38 @@ const AdvancedSearch = () => {
     Year: ["2024", "2023", "2022", "2021", "2020"],
   };
 
-  // Handle search input change
+ 
   const handleSearchChange = (e) => {
     setSearchInput(e.target.value);
   };
 
-  // Handle form submission (you can replace this with filtering logic)
+  
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     const searchQuery = `${searchInput} ${selectedCategories.join(" ")}`.trim();
-    console.log("Searching for:", searchQuery); // Combined search query with selected categories
-    // Add your search logic here
+    console.log("Searching for:", searchQuery); 
+    
   };
 
-  // Handle category selection
+
   const handleCategorySelect = (category, option) => {
     const newCategory = `${category}: ${option}`;
     if (!selectedCategories.includes(newCategory)) {
-      setSelectedCategories([...selectedCategories, newCategory]); // Add selected category if not already selected
+      setSelectedCategories([...selectedCategories, newCategory]);
     }
-    setVisibleCategoryDropdown(null); // Close the dropdown after selection
+    setVisibleCategoryDropdown(null); 
   };
 
-  // Handle reset of the search input and categories
+ 
   const handleReset = () => {
     setSearchInput("");
-    setSelectedCategories([]); // Reset the selected categories
+    setSelectedCategories([]); 
   };
 
   return (
     <div className="col-xl-4 col-lg-4">
       <aside className="side-bar sticky-top right">
-        {/* Search Box */}
+        
         <div className="widget">
           <div className="widget-title">
             <h4 className="title">Search</h4>
@@ -59,7 +59,7 @@ const AdvancedSearch = () => {
                   className="form-control style-1"
                   placeholder="Search.."
                   type="text"
-                  value={`${searchInput} ${selectedCategories.join(" ")}`.trim()} // Display the search query with selected filters
+                  value={`${searchInput} ${selectedCategories.join(" ")}`.trim()} 
                   onChange={handleSearchChange}
                 />
                 <span className="input-group-btn">
@@ -75,7 +75,7 @@ const AdvancedSearch = () => {
           </div>
         </div>
 
-        {/* Category Filter */}
+       
         <div className="widget widget_categories">
           <div className="widget-title">
             <h4 className="title">Categories</h4>
@@ -89,7 +89,7 @@ const AdvancedSearch = () => {
               >
                 <a href="#">{category}</a>
 
-                {/* Display dropdown under the selected category */}
+               
                 {visibleCategoryDropdown === category && (
                   <ul className="dropdown-list">
                     {categoryOptions[category].map((option, idx) => (
@@ -104,11 +104,11 @@ const AdvancedSearch = () => {
           </ul>
         </div>
 
-        {/* Reset Button */}
+      
         <div className="widget">
           <button
             className="btn btn-secondary"
-            onClick={handleReset} // Reset search input and selected categories
+            onClick={handleReset} 
           >
             Reset
           </button>

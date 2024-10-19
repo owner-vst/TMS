@@ -6,7 +6,7 @@ import Link from "next/link";
 function Search() {
   return (
     <div>
-      {/* Banner  */}
+     
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
         style={{ backgroundImage: "url(/assets/images/banner/bnr2.jpg)" }}
@@ -27,8 +27,7 @@ function Search() {
           </div>
         </div>
       </div>
-      {/* Banner End */}
-      {/* blog-list section start */}
+     
       <section className="content-inner bg-white position-relative">
         <div className="container">
           <div className="row ">
@@ -96,66 +95,13 @@ function Search() {
                 </div>
               </div>
             </div>
-            {/* <div className="col-xl-4 col-lg-4">
-              <aside className="side-bar sticky-top right">
-                <div className="widget">
-                  <div className="widget-title">
-                    <h4 className="title">Search</h4>
-                  </div>
-                  <div className="search-bx">
-                    <form role="search" method="post">
-                      <div className="input-group">
-                        <input
-                          name="text"
-                          className="form-control style-1"
-                          placeholder="Search.."
-                          type="text"
-                        />
-                        <span className="input-group-btn">
-                          <button
-                            type="submit"
-                            className="btn btn-primary sharp radius-no"
-                          >
-                            <i className="fa-solid fa-magnifying-glass scale3" />
-                          </button>
-                        </span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div className="widget widget_categories">
-                  <div className="widget-title">
-                    <h4 className="title">Categories</h4>
-                  </div>
-                  <ul>
-                    <li className="cat-item">
-                      <a href="#">Categories(10)</a>
-                    </li>
-                    <li className="cat-item">
-                      <a href="#">Education(13)</a>
-                    </li>
-                    <li className="cat-item">
-                      <a href="#">Information(9)</a>
-                    </li>
-                    <li className="cat-item">
-                      <a href="#">Jobs(3)</a>
-                    </li>
-                    <li className="cat-item">
-                      <a href="#">Learn(12)</a>
-                    </li>
-                    <li className="cat-item">
-                      <a href="#">Skill(6)</a>
-                    </li>
-                  </ul>
-                </div>
-              </aside>
-            </div> */}
-            {/* <Sidebar/> */}
+           
+          
             <AdvancedSearch />
           </div>
         </div>
       </section>
-      {/* blog-list section start */}
+     
     </div>
   );
 }

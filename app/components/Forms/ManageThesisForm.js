@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function ManageThesisForm({ mode, onCreate }) {
   useEffect(() => {
-    // Bootstrap validation setup
+   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");

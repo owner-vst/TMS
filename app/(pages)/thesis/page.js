@@ -4,7 +4,7 @@ import Link from "next/link";
 function Thesis() {
   return (
     <div>
-      {/* Banner  */}
+    
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
         style={{ backgroundImage: "url(/assets/images/banner/bnr3.jpg)" }}
@@ -25,8 +25,7 @@ function Thesis() {
           </div>
         </div>
       </div>
-      {/* Banner End */}
-      {/* Blog Details */}
+      
       <section
         className="content-inner position-relative"
         style={{ background: "white" }}
@@ -135,14 +134,14 @@ function Thesis() {
                 </div>
               </div>
 
-              {/* Comment List */}
+             
               <div className="clear" id="comment-list">
                 <div className="comments-area" id="comments">
                   <div className="widget-title style-1">
                     <h4 className="title">Comments</h4>
                   </div>
                   <div className="clearfix">
-                    {/* comment list END */}
+                   
                     <ol className="comment-list">
                       <li className="comment">
                         <div className="comment-body">
@@ -191,8 +190,7 @@ function Thesis() {
                         </div>
                       </li>
                     </ol>
-                    {/* comment list END */}
-                    {/* Form */}
+                    
                     <div className="comment-respond" id="respond">
                       <div className="widget-title style-1">
                         <h4 className="title" id="reply-title">
@@ -234,7 +232,7 @@ function Thesis() {
                         </p>
                       </form>
                     </div>
-                    {/* Form */}
+                  
                   </div>
                 </div>
               </div>
@@ -243,7 +241,7 @@ function Thesis() {
           </div>
         </div>
       </section>
-      {/* Blog Details */}
+    
     </div>
   );
 }

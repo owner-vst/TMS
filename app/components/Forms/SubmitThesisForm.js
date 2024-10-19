@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 function SubmitThesisForm({ mode, onCreate }) {
   useEffect(() => {
-    // Bootstrap validation setup
+   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");

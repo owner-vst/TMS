@@ -3,11 +3,11 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="site-header mo-left header ">
-      {/* Main Header */}
+     
       <div className="sticky-header main-bar-wraper navbar-expand-lg">
         <div className="main-bar clearfix ">
           <div className="container clearfix">
-            {/* Website Logo */}
+           
             <div className="logo-header">
               <Link href="/" className="logo-dark">
                 <svg
@@ -205,9 +205,7 @@ function Header() {
                 </Link>
               </div>
             </div>
-            {/* Search Form */}
-
-            {/* Header Nav */}
+           
             <div
               className="header-nav navbar-collapse collapse justify-content-end"
               id="navbarNavDropdown"
@@ -239,7 +237,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {/* Main Header End */}
+     
     </header>
   );
 }
