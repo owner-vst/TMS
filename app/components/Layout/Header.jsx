@@ -3,11 +3,9 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="site-header mo-left header ">
-     
       <div className="sticky-header main-bar-wraper navbar-expand-lg">
         <div className="main-bar clearfix ">
           <div className="container clearfix">
-           
             <div className="logo-header">
               <Link href="/" className="logo-dark">
                 <svg
@@ -180,7 +178,6 @@ function Header() {
                 </svg>
               </Link>
             </div>
-            {/* Nav Toggle Button */}
             <button
               className="navbar-toggler collapsed navicon justify-content-end"
               type="button"
@@ -194,7 +191,6 @@ function Header() {
               <span />
               <span />
             </button>
-            {/* Extra Nav */}
             <div className="extra-nav">
               <div className="extra-cell">
                 <Link
@@ -205,7 +201,6 @@ function Header() {
                 </Link>
               </div>
             </div>
-           
             <div
               className="header-nav navbar-collapse collapse justify-content-end"
               id="navbarNavDropdown"
@@ -227,7 +222,7 @@ function Header() {
                   <Link href="/search">Search</Link>
                 </li>
                 <li>
-                  <Link href="/blog">Blog</Link>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li>
                   <Link href="/contact">Contact Us</Link>
@@ -237,7 +232,6 @@ function Header() {
           </div>
         </div>
       </div>
-     
     </header>
   );
 }

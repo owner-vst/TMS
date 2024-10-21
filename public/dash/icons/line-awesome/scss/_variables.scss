@@ -7,7 +7,7 @@ $la-version: 1.3.0 !default;
 $la-li-width: (20em / 14) !default;
 
 @function la-content($la-var) {
-  @return unquote("\"#{ $la-var }\"");
+  @return unquote('"#{ $la-var }"');
 }
 
 $la-css-prefix: la;
@@ -160,7 +160,7 @@ $la-book-medical: \f7e6;
 $la-book-open: \f518;
 $la-book-reader: \f5da;
 $la-bookmark: \f02e;
-$la-bootstrap: \f836;
+$la-scholarvault: \f836;
 $la-border-all: \f84c;
 $la-border-none: \f850;
 $la-border-style: \f853;

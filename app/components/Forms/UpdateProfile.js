@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function UpdateProfile({ mode, onCreate }) {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -54,12 +53,7 @@ function UpdateProfile({ mode, onCreate }) {
       <div className="row">
         <div className="mb-3 ">
           <label className="form-label">Gender</label>
-          <select
-            name="gender"
-            className="form-control"
-            defaultValue=""
-            required
-          >
+          <select name="gender" className="form-control" required>
             <option value="" disabled>
               Choose Gender
             </option>
@@ -126,7 +120,6 @@ function UpdateProfile({ mode, onCreate }) {
       <div className="d-flex justify-content-end">
         {" "}
         <button type="submit" className="btn btn-primary">
-          
           Update
         </button>
       </div>

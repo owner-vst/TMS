@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 function ManagePeerForm({ mode, onCreate }) {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -65,22 +64,16 @@ function ManagePeerForm({ mode, onCreate }) {
               <div className="row">
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Review</label>
-                  <input
+                  <textarea
                     required
                     className="form-control"
-                    type="text"
                     placeholder="Enter Review"
                   />
                   <div className="invalid-feedback">Please enter Message.</div>
                 </div>
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Status</label>
-                  <select
-                    name="status"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select name="status" className="form-control" required>
                     <option value="" disabled>
                       Choose Status
                     </option>

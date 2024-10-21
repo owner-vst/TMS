@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 function SubmitThesisForm({ mode, onCreate }) {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -49,12 +48,7 @@ function SubmitThesisForm({ mode, onCreate }) {
               <div className="row">
                 <div className="mb-3 ">
                   <label className="form-label">Author Name</label>
-                  <select
-                    id="inputState"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select id="inputState" className="form-control" required>
                     <option value="" disabled>
                       Select Author
                     </option>
@@ -71,12 +65,7 @@ function SubmitThesisForm({ mode, onCreate }) {
               <div className="row">
                 <div className="mb-3 ">
                   <label className="form-label">Category</label>
-                  <select
-                    id="inputState"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select id="inputState" className="form-control" required>
                     <option value="" disabled>
                       Choose Category
                     </option>

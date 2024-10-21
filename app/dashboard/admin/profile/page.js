@@ -26,8 +26,8 @@ function Profile() {
                             <i className="fa fa-camera" />
                           </div>
                         </div>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <div className="author-info">
                           <h6 className="title">John</h6>
                           <span>Admin</span>
@@ -36,7 +36,7 @@ function Profile() {
                     </div>
                     <div className="info-list">
                       <ul>
-                      <li>
+                        <li>
                           Fisrt Name<span>John</span>
                         </li>
                         <li>
@@ -66,7 +66,6 @@ function Profile() {
                         <li>
                           Address<span>123 Main St, New York, NY 10001</span>
                         </li>
-
                       </ul>
                     </div>
                   </div>
@@ -74,17 +73,15 @@ function Profile() {
               </div>
             </div>
             <div className="col-xl-9 col-lg-8">
-              <div className="card  card-bx m-b30">
+              <div className="card card-bx m-b30">
                 <div className="card-header">
                   <h6 className="title">Update Profile</h6>
                 </div>
                 <div className="card-body">
-          <div className="basic-form">
-          <UpdateProfile />
-          
-          </div>
-          </div>
-                
+                  <div className="basic-form">
+                    <UpdateProfile />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

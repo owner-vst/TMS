@@ -1,4 +1,5 @@
 # jQuery Smart Wizard v5
+
 #### The awesome jQuery step wizard plugin.
 
 [![Build Status](https://travis-ci.org/techlab/jquery-smartwizard.svg?branch=master)](https://travis-ci.org/techlab/jquery-smartwizard)
@@ -10,76 +11,93 @@
 [![GitHub Repo](https://badgen.net/badge/icon/jquery-smartwizard?icon=github&label=&color=0da4d3)](https://github.com/techlab/jquery-smartwizard)
 [![Donate on Paypal](https://img.shields.io/badge/PayPal-dipuraj-blue.svg)](https://www.paypal.me/dipuraj)
 
-
 **jQuery Smart Wizard** is an accessible step wizard plugin for jQuery.
 Provides a neat and stylish interface for your forms, checkout screen, registration steps, etc.
-Easy implementation,  Bootstrap compatiblity, customizable toolbars, themes, events and Ajax support are few of the features.
+Easy implementation, scholarvault compatiblity, customizable toolbars, themes, events and Ajax support are few of the features.
 
-+ [Homepage](http://techlaboratory.net/jquery-smartwizard)
-+ [Documentation](http://techlaboratory.net/jquery-smartwizard#documentation)
-+ [Demos](http://techlaboratory.net/jquery-smartwizard#demo)
-+ [StackOverflow Q&A](http://stackoverflow.com/questions/tagged/smart-wizard)
-+ [GitHub Issues](https://github.com/techlab/jquery-smartwizard/issues)
+- [Homepage](http://techlaboratory.net/jquery-smartwizard)
+- [Documentation](http://techlaboratory.net/jquery-smartwizard#documentation)
+- [Demos](http://techlaboratory.net/jquery-smartwizard#demo)
+- [StackOverflow Q&A](http://stackoverflow.com/questions/tagged/smart-wizard)
+- [GitHub Issues](https://github.com/techlab/jquery-smartwizard/issues)
 
-Demos
------
-+ [Basic Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5)
-+ [Ajax Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5/ajax)
-+ [Multiple Wizard Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5/multiple)
+## Demos
 
-Screenshots
------
-![Smart Wizard Default](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-default.png)   
+- [Basic Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5)
+- [Ajax Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5/ajax)
+- [Multiple Wizard Example](http://techlaboratory.net/projects/demo/jquery-smart-wizard/v5/multiple)
 
-![Smart Wizard Arrows](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-arrows.png)   
+## Screenshots
 
-![Smart Wizard Black](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-dark.png)   
+![Smart Wizard Default](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-default.png)
 
-![Smart Wizard Dots](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-dots.png)  
+![Smart Wizard Arrows](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-arrows.png)
 
+![Smart Wizard Black](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-dark.png)
 
-Requirements
------
-  + [jQuery](http://jquery.com/) (supports from jQuery-1.11.1+ to the latest jQuery-3.5)
+![Smart Wizard Dots](http://techlaboratory.net/assets/media/jquery-smart-wizard/jquery-smartwizard-v5-dots.png)
 
-Installation
------
+## Requirements
+
+- [jQuery](http://jquery.com/) (supports from jQuery-1.11.1+ to the latest jQuery-3.5)
+
+## Installation
 
 ### [NPM](https://www.npmjs.com/package/smartwizard)
+
     npm install smartwizard
 
 ### [Yarn](https://yarn.pm/smartwizard)
+
     yarn add smartwizard
 
 ### [Composer](https://packagist.org/packages/techlab/smartwizard)
+
     composer require techlab/smartwizard
 
 ### [CDN - jsDelivr](https://www.jsdelivr.com/package/npm/smartwizard)
+
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+<link
+  href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css"
+  rel="stylesheet"
+  type="text/css"
+/>
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
-```    
+<script
+  src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js"
+  type="text/javascript"
+></script>
+```
+
 ### [CDN - UNPKG](https://unpkg.com/browse/smartwizard/)
+
 ```html
 <!-- CSS -->
-<link href="https://unpkg.com/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+<link
+  href="https://unpkg.com/smartwizard@5/dist/css/smart_wizard_all.min.css"
+  rel="stylesheet"
+  type="text/css"
+/>
 
 <!-- JavaScript -->
-<script src="https://unpkg.com/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+<script
+  src="https://unpkg.com/smartwizard@5/dist/js/jquery.smartWizard.min.js"
+  type="text/javascript"
+></script>
 ```
 
 ### Download
+
 #### [Download from GitHub](https://github.com/techlab/jquery-smartwizard/archive/master.zip)
 
-Features
------
+## Features
 
 - Standalone CSS
 - Accessible controls
-- Bootstrap compatible
+- scholarvault compatible
 - Cool themes included
 - Dark mode
 - URL navigation and selection
@@ -98,80 +116,82 @@ Features
 - Supports all modern browsers
 - Compatible with all jQuery versions (jQuery 1.11.1+, jQuery 2+, jQuery 3.5+)
 
-Usage
------
+## Usage
 
 Include SmartWizard CSS
+
 ```html
-<link href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+<link
+  href="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/css/smart_wizard_all.min.css"
+  rel="stylesheet"
+  type="text/css"
+/>
 ```
 
-Include HTML (*This is the basic HTML markup for the Smart Wizard. You can customize it by adding your on steps content*).
+Include HTML (_This is the basic HTML markup for the Smart Wizard. You can customize it by adding your on steps content_).
+
 ```html
 <div id="smartwizard">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#step-1"> Step 1 </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#step-2"> Step 2 </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#step-3"> Step 3 </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#step-4"> Step 4 </a>
+    </li>
+  </ul>
 
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#step-1">
-            Step 1
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#step-2">
-            Step 2
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#step-3">
-            Step 3
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#step-4">
-            Step 4
-          </a>
-        </li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
-            Step 1 Content
-        </div>
-        <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2">
-            Step 2 Content
-        </div>
-        <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
-            Step 3 Content
-        </div>
-        <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4">
-            Step 4 Content
-        </div>
+  <div class="tab-content">
+    <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
+      Step 1 Content
     </div>
+    <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2">
+      Step 2 Content
+    </div>
+    <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
+      Step 3 Content
+    </div>
+    <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4">
+      Step 4 Content
+    </div>
+  </div>
 </div>
 ```
 
-Include jQuery (*ignore this if you have already included on the page*).  
+Include jQuery (_ignore this if you have already included on the page_).
+
 ```html
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 ```
 
 Include SmartWizard plugin
+
 ```html
-<script src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/smartwizard@5/dist/js/jquery.smartWizard.min.js"
+  type="text/javascript"
+></script>
 ```
+
 Initialize the SmartWizard
+
 ```html
 <script type="text/javascript">
-$(document).ready(function() {
-
-    $('#smartwizard').smartWizard();
-
-});
+  $(document).ready(function () {
+    $("#smartwizard").smartWizard();
+  });
 </script>
 ```
-That's it!   
 
-Please see the [documentation](http://techlaboratory.net/jquery-smartwizard#documentation) for more details on implementation and usage.  
+That's it!
+
+Please see the [documentation](http://techlaboratory.net/jquery-smartwizard#documentation) for more details on implementation and usage.
 
 ##### All options
 
@@ -220,12 +240,12 @@ $('#smartwizard').smartWizard({
 });
 ```
 
-License
-----
+## License
+
 [MIT License](https://github.com/techlab/jquery-smartwizard/blob/master/LICENSE)
 
-Contribute
-----
+## Contribute
+
 If you like the project please support with your contribution.
 
 [Donate on Paypal](https://www.paypal.me/dipuraj)

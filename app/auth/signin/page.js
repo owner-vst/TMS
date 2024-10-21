@@ -5,7 +5,6 @@ import Logo from "../../components/Logo";
 
 function Signin() {
   useEffect(() => {
-    
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -24,20 +23,23 @@ function Signin() {
       });
     })();
   }, []);
+
   return (
-    <div className="vh-100 main-bnr bg-light"
-    style={{
-      backgroundImage: "url('/dash/images/bg.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
+    <div
+      className="vh-100 main-bnr bg-light"
+      style={{
+        backgroundImage: "url('/dash/images/bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="authentication h-100">
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">
             <div className="col-md-6">
               <div className="authentication-content">
                 <div className="row no-gutters">
-                  <div className="col-xl-12">
+                  <div className="col-lg-12">
                     <div className="auth-form">
                       <div className="text-center mb-3">
                         <Link href="/" className="brand-logo">
@@ -92,7 +94,7 @@ function Signin() {
                         <p>
                           Don't have an account?{" "}
                           <Link className="" href="/auth/signup">
-                            Sign up
+                            Sign Up
                           </Link>
                         </p>
                       </div>

@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="footer ">
       <div className="copyright ">
-        <p>Copyright © ScholarVault &amp; Developed by Scholar Vault 2024</p>
+        <p>Copyright 2024 © ScholarVault</p>
       </div>
     </div>
   );

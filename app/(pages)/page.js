@@ -7,7 +7,7 @@ export default function Home() {
       <div className="main-bnr bg-light">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-xl-7 col-lg-7 col-md-12">
+            <div className="col-lg-7 col-md-12">
               <h6 className="sub-title wow fadeInUp" data-wow-delay="0.4s">
                 We Have 10,000+ Thesis
               </h6>
@@ -16,7 +16,7 @@ export default function Home() {
                 <span className=" text-primary">Thesis</span>
               </h1>
             </div>
-            <div className="col-xl-5 col-lg-5 col-md-12">
+            <div className="col-lg-5 col-md-12">
               <div className="banner-media">
                 <img
                   className="media wow bounceInRight"
@@ -308,21 +308,21 @@ export default function Home() {
           <div className="row">
             <ThesisCard
               author="John Doe"
-              date="18 Jun 2020"
+              date="18 Jun 2024"
               title="AI in Healthcare: Transforming Diagnostics"
               desc="Examines the role of AI in enhancing diagnostic accuracy and patient outcomes."
               img_src="/assets/images/blog/t2.png"
             />
             <ThesisCard
               author="Mark"
-              date="11 Jun 2020"
+              date="11 Jun 2024"
               title="Sustainable Architecture: Green Building Solutions"
               desc="Explores innovative architectural designs that promote environmental sustainability"
               img_src="/assets/images/blog/t3.png"
             />
             <ThesisCard
               author="Tony"
-              date="18 May 2020"
+              date="18 May 2024"
               title=" Blockchain Technology in Financial Security"
               desc="Investigates how blockchain is revolutionizing security in financial transactions."
               img_src="/assets/images/blog/t4.png"
@@ -340,21 +340,21 @@ export default function Home() {
           <div className="row">
             <ThesisCard
               author="ELon "
-              date="18 Jun 2020"
+              date="18 Jun 2024"
               title="Impact of Climate Change on Marine Biodiversity"
               desc="Analyzes the effects of global climate change on marine ecosystems and species diversity."
               img_src="/assets/images/blog/t5.png"
             />
             <ThesisCard
               author="Chris"
-              date="18 Jun 2020"
+              date="18 Jun 2024"
               title="Advancements in Quantum Computing"
               desc="A study of the potential breakthroughs in quantum computing and its future applications"
               img_src="/assets/images/blog/t6.png"
             />
             <ThesisCard
               author="David"
-              date="18 Jun 2020"
+              date="18 Jun 2024"
               title="Mental Health Awareness in Modern Workplaces"
               desc="Focuses on promoting mental health initiatives and support systems within corporate environments."
               img_src="/assets/images/blog/t7.png"
@@ -366,12 +366,12 @@ export default function Home() {
         <section className="footer-action wow fadeInUp" data-wow-delay="1.0s">
           <div className="inner-content wow fadeInUp" data-wow-delay="1.2s">
             <div className="row justify-content-between align-items-center">
-              <div className="text-center text-xl-start col-xl-7 m-lg-b20">
+              <div className="text-center text-xl-start col-lg-7 m-lg-b20">
                 <h2 className="title">
                   Let's Get Connected And Explore Thesis
                 </h2>
               </div>
-              <div className="text-center text-xl-end col-xl-5">
+              <div className="text-center text-xl-end col-lg-5">
                 <Link href="/auth/signin" className="btn btn-light btn-lg">
                   Create Free Account
                 </Link>

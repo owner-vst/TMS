@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function Contact() {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -32,7 +31,6 @@ function Contact() {
         <div className="container">
           <div className="dz-bnr-inr-entry">
             <h1>Contact Us</h1>
-            {/* Breadcrumb Row */}
             <nav aria-label="breadcrumb" className="breadcrumb-row m-t15">
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -43,16 +41,13 @@ function Contact() {
                 </li>
               </ul>
             </nav>
-            {/* Breadcrumb Row End */}
           </div>
         </div>
       </div>
-      {/* Banner End */}
-      {/* Map Iframe */}
       <section className="map-wrapper1 overflow-hidden  content-inner">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-xl-5 col-lg-5 m-b30">
+            <div className="col-lg-5 m-b30">
               <div className="info-box style-1 ">
                 <div className="info">
                   <h2 className="text-light wow fadeInUp" data-wow-delay="0.6s">
@@ -278,7 +273,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-7 col-lg-7 col-sm-12 m-b30">
+            <div className="col-lg-7 col-sm-12 m-b30">
               <div className="form-wrapper style-1">
                 <h2 className="title m-a0 wow fadeInUp" data-wow-delay="1.6s">
                   Get In touch

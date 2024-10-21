@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function ManageThesisForm({ mode, onCreate }) {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -55,12 +54,7 @@ function ManageThesisForm({ mode, onCreate }) {
                 <div className="row">
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Category</label>
-                    <select
-                      id="inputState"
-                      className="form-control"
-                      defaultValue=""
-                      required
-                    >
+                    <select id="inputState" className="form-control" required>
                       <option value="" disabled>
                         Choose Category
                       </option>
@@ -92,12 +86,7 @@ function ManageThesisForm({ mode, onCreate }) {
                 <div className="row">
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Status</label>
-                    <select
-                      id="inputState"
-                      className="form-control"
-                      defaultValue=""
-                      required
-                    >
+                    <select id="inputState" className="form-control" required>
                       <option value="" disabled>
                         Choose Status
                       </option>
@@ -111,12 +100,7 @@ function ManageThesisForm({ mode, onCreate }) {
                   </div>
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Author Name</label>
-                    <select
-                      id="inputState"
-                      className="form-control"
-                      defaultValue=""
-                      required
-                    >
+                    <select id="inputState" className="form-control" required>
                       <option value="" disabled>
                         Select Author
                       </option>
@@ -149,8 +133,8 @@ function ManageThesisForm({ mode, onCreate }) {
                 <div className="d-flex justify-content-end">
                   {" "}
                   <button type="submit" className="btn btn-primary">
-                  {mode === "edit" ? "Edit" : "Create"} Thesis
-                </button>
+                    {mode === "edit" ? "Edit" : "Create"} Thesis
+                  </button>
                 </div>
               </div>
             </div>

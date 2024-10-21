@@ -1,20 +1,16 @@
-
 import SubmitThesisForm from "@/app/components/Forms/SubmitThesisForm";
 import AccordionComp from "@/app/components/misc/AccordionComp";
 import Pagination from "@/app/components/misc/Pagination";
 
-
 function Submit_Thesis() {
-
   return (
     <div className="content-body">
       <div className="container-fluid">
         <div className="row">
-         
           <SubmitThesisForm />
-          <div className="col-xl-6">
+          <div className="col-lg-6">
             <div className="card">
-            <AccordionComp/>
+              <AccordionComp />
             </div>
           </div>
 
@@ -102,11 +98,9 @@ function Submit_Thesis() {
                     </tbody>
                   </table>
                 </div>
-               
               </div>
-             
             </div>
-            <Pagination/>
+            <Pagination />
           </div>
         </div>
       </div>

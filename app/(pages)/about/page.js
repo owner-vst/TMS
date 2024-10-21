@@ -11,7 +11,7 @@ function About() {
         <div className="container">
           <div className="dz-bnr-inr-entry">
             <h1>About Us</h1>
-          
+
             <nav aria-label="breadcrumb" className="breadcrumb-row m-t15">
               <ul className="breadcrumb">
                 <li className="breadcrumb-item">
@@ -22,7 +22,6 @@ function About() {
                 </li>
               </ul>
             </nav>
-           
           </div>
         </div>
       </div>
@@ -30,7 +29,7 @@ function About() {
         <div className="container">
           <div className="section-head text-center">
             <h2 className="title wow fadeInUp" data-wow-delay="0.8s">
-              What We Belive in
+              What We Believe In
             </h2>
           </div>
           <div className="row justify-content-center">
@@ -114,7 +113,7 @@ function About() {
             </h2>
           </div>
           <div className="row">
-            <div className="col-xl-4 col-md-6  m-b30">
+            <div className="col-lg-4 col-md-6  m-b30">
               <div
                 className="dz-card style-1 overlay-shine wow fadeInUp"
                 data-wow-delay="1.0s"
@@ -142,7 +141,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6  m-b30">
+            <div className="col-lg-4 col-md-6  m-b30">
               <div
                 className="dz-card style-1 overlay-shine wow fadeInUp"
                 data-wow-delay="1.0s"
@@ -170,7 +169,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6  m-b30">
+            <div className="col-lg-4 col-md-6  m-b30">
               <div
                 className="dz-card style-1 overlay-shine wow fadeInUp"
                 data-wow-delay="1.0s"

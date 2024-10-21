@@ -6,7 +6,6 @@ import Logo from "../../components/Logo";
 
 function signup() {
   useEffect(() => {
-    
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -48,19 +47,21 @@ function signup() {
   }, []);
   return (
     <>
-      <div className="vh-100"
-      style={{
-        backgroundImage: "url('/dash/images/bg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}>
+      <div
+        className="vh-100"
+        style={{
+          backgroundImage: "url('/dash/images/bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="authentication h-100">
           <div className="container h-100">
             <div className="row justify-content-center h-100 align-items-center">
-              <div className="col-md-6">
+              <div className="col-md-9">
                 <div className="authentication-content">
                   <div className="row no-gutters">
-                    <div className="col-xl-12">
+                    <div className="col-lg-12">
                       <div className="auth-form">
                         <div className="text-center mb-3">
                           <Link href="/" className="brand-logo">
@@ -109,7 +110,6 @@ function signup() {
                                   <select
                                     id="inputState"
                                     className="form-control"
-                                    defaultValue=""
                                     required
                                   >
                                     <option value="" disabled>
@@ -212,7 +212,6 @@ function signup() {
                                 <select
                                   id="inputState"
                                   className="form-control"
-                                  defaultValue=""
                                   required
                                 >
                                   <option value="" disabled>
@@ -265,7 +264,7 @@ function signup() {
                                 type="submit"
                                 className="btn btn-primary btn-block"
                               >
-                                Sign up
+                                Sign Up
                               </button>
                             </div>
                           </form>
@@ -277,7 +276,7 @@ function signup() {
                               className="text-decoration-none"
                               href="/auth/signin"
                             >
-                              Sign in
+                              Sign In
                             </Link>
                           </p>
                         </div>

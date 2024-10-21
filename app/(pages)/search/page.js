@@ -1,15 +1,13 @@
 import ThesisHorizontal from "@/app/components/Cards/ThesisHorizontal";
 import AdvancedSearch from "@/app/components/Search/AdvancedSearch";
-import Sidebar from "@/app/components/Search/Search";
 import Link from "next/link";
 
 function Search() {
   return (
     <div>
-     
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
-        style={{ backgroundImage: "url(/assets/images/banner/bnr2.jpg)" }}
+        style={{ backgroundImage: "url(/assets/images/banner/bnr1.jpg)" }}
       >
         <div className="container">
           <div className="dz-bnr-inr-entry">
@@ -27,11 +25,11 @@ function Search() {
           </div>
         </div>
       </div>
-     
+
       <section className="content-inner bg-white position-relative">
         <div className="container">
           <div className="row ">
-            <div className="col-xl-8 col-lg-8">
+            <div className="col-lg-8">
               <div className="row">
                 <ThesisHorizontal
                   title="Use of AI in healtcare"
@@ -41,31 +39,31 @@ function Search() {
               future. In this thesis, we will discuss the use of AI in
               "
                   author="KK Sharma"
-                  date="25 Sep 2015"
+                  date="25 Sep 2024"
                   img_src="/assets/images/blog/t2.png"
                 />
                 <ThesisHorizontal
                   author="ELon "
-                  date="18 Jun 2020"
+                  date="18 Jun 2024"
                   title="Impact of Climate Change on Marine Biodiversity"
                   abstract="Analyzes the effects of global climate change on marine ecosystems and species diversity."
                   img_src="/assets/images/blog/t5.png"
                 />
                 <ThesisHorizontal
                   author="Chris"
-                  date="18 Jun 2020"
+                  date="18 Jun 2024"
                   title="Advancements in Quantum Computing"
                   abstract="A study of the potential breakthroughs in quantum computing and its future applications"
                   img_src="/assets/images/blog/t6.png"
                 />
                 <ThesisHorizontal
                   author="David"
-                  date="18 Jun 2020"
+                  date="18 Jun 2024"
                   title="Mental Health Awareness in Modern Workplaces"
                   abstract="Focuses on promoting mental health initiatives and support systems within corporate environments."
                   img_src="/assets/images/blog/t7.png"
                 />
-                <div className="col-xl-12 col-lg-12 m-b30 m-t30 m-lg-t10">
+                <div className="col-lg-12 m-b30 m-t30 m-lg-t10">
                   <nav aria-label="Blog Pagination">
                     <ul
                       className="pagination style-2 text-center wow fadeInUp"
@@ -95,13 +93,10 @@ function Search() {
                 </div>
               </div>
             </div>
-           
-          
             <AdvancedSearch />
           </div>
         </div>
       </section>
-     
     </div>
   );
 }

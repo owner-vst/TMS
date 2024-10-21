@@ -5,67 +5,77 @@ import { useEffect, useState } from "react";
 
 function NavBar() {
   const [role, setRole] = useState(null);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
   useEffect(() => {
     if (pathname) {
-      const currentRole = pathname.split("/")[2]; 
-      setRole(currentRole); 
+      const currentRole = pathname.split("/")[2];
+      setRole(currentRole);
     }
   }, [pathname]);
 
   const menuItems = {
     admin: [
       {
-        label: "View Thesis",
-        link: "/dashboard/admin/view_thesis",
+        label: "Dashboard",
+        link: "/dashboard/admin",
         icon: "flaticon-025-dashboard",
+      },
+      {
+        label: "Search Thesis",
+        link: "/dashboard/admin/search_thesis",
+        icon: "flaticon-022-copy",
       },
       {
         label: "Manage Guidelines",
         link: "/dashboard/admin/manage_guidelines",
-        icon: "flaticon-050-info",
+        icon: "flaticon-035-flag",
       },
       {
         label: "Manage Review",
         link: "/dashboard/admin/manage_peer",
-        icon: "flaticon-086-star",
+        icon: "flaticon-009-check",
       },
       {
         label: "Manage Users",
         link: "/dashboard/admin/manage_users",
-        icon: "flaticon-022-copy",
+        icon: "flaticon-085-signal",
       },
       {
         label: "Manage Thesis",
         link: "/dashboard/admin/manage_thesis",
-        icon: "flaticon-041-graph",
+        icon: "flaticon-053-lifebuoy",
       },
       {
         label: "Profile",
         link: "/dashboard/admin/profile",
-        icon: "flaticon-045-heart",
+        icon: "flaticon-086-star",
       },
     ],
     scholar: [
       {
-        label: "View Thesis",
-        link: "/dashboard/scholar/view_thesis",
+        label: "Dashboard",
+        link: "/dashboard/scholar",
         icon: "flaticon-025-dashboard",
+      },
+      {
+        label: "Search Thesis",
+        link: "/dashboard/scholar/search_thesis",
+        icon: "flaticon-022-copy",
       },
       {
         label: "Manage Guidelines",
         link: "/dashboard/scholar/manage_guidelines",
-        icon: "flaticon-050-info",
+        icon: "flaticon-035-flag",
       },
       {
         label: "Manage Review",
         link: "/dashboard/scholar/manage_peer",
-        icon: "flaticon-086-star",
+        icon: "flaticon-009-check",
       },
       {
         label: "Manage Thesis",
         link: "/dashboard/scholar/manage_thesis",
-        icon: "flaticon-041-graph",
+        icon: "flaticon-053-lifebuoy",
       },
       {
         label: "Submit Thesis",
@@ -75,14 +85,19 @@ function NavBar() {
       {
         label: "Profile",
         link: "/dashboard/scholar/profile",
-        icon: "flaticon-045-heart",
+        icon: "flaticon-086-star",
       },
     ],
     user: [
       {
-        label: "View Thesis",
-        link: "/dashboard/user/view_thesis",
+        label: "Dashboard",
+        link: "/dashboard/user",
         icon: "flaticon-025-dashboard",
+      },
+      {
+        label: "Search Thesis",
+        link: "/dashboard/user/search_thesis",
+        icon: "flaticon-022-copy",
       },
       {
         label: "Submit Thesis",
@@ -97,11 +112,10 @@ function NavBar() {
       {
         label: "Profile",
         link: "/dashboard/user/profile",
-        icon: "flaticon-045-heart",
+        icon: "flaticon-086-star",
       },
     ],
   };
-
 
   const currentMenuItems = menuItems[role] || [];
 

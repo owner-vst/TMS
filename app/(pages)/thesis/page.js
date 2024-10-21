@@ -4,7 +4,6 @@ import Link from "next/link";
 function Thesis() {
   return (
     <div>
-    
       <div
         className="dz-bnr-inr dz-bnr-inr-sm text-center overlay-primary-dark"
         style={{ backgroundImage: "url(/assets/images/banner/bnr3.jpg)" }}
@@ -25,14 +24,14 @@ function Thesis() {
           </div>
         </div>
       </div>
-      
+
       <section
         className="content-inner position-relative"
         style={{ background: "white" }}
       >
         <div className="container">
-          <div className="row ">
-            <div className="col-xl-8 col-lg-8">
+          <div className="row">
+            <div className="col-lg-8">
               <div className="blog-single pt-20 sidebar dz-card">
                 <div className="dz-media dz-media-rounded rounded">
                   <img src="/assets/images/blog/large/ai.jpeg" alt="Image" />
@@ -134,14 +133,12 @@ function Thesis() {
                 </div>
               </div>
 
-             
               <div className="clear" id="comment-list">
                 <div className="comments-area" id="comments">
                   <div className="widget-title style-1">
                     <h4 className="title">Comments</h4>
                   </div>
                   <div className="clearfix">
-                   
                     <ol className="comment-list">
                       <li className="comment">
                         <div className="comment-body">
@@ -190,7 +187,7 @@ function Thesis() {
                         </div>
                       </li>
                     </ol>
-                    
+
                     <div className="comment-respond" id="respond">
                       <div className="widget-title style-1">
                         <h4 className="title" id="reply-title">
@@ -232,7 +229,6 @@ function Thesis() {
                         </p>
                       </form>
                     </div>
-                  
                   </div>
                 </div>
               </div>
@@ -241,7 +237,6 @@ function Thesis() {
           </div>
         </div>
       </section>
-    
     </div>
   );
 }

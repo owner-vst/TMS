@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function ValidationsForm() {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -64,12 +63,7 @@ function ValidationsForm() {
                 <div className="row">
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Category</label>
-                    <select
-                      id="inputState"
-                      className="form-control"
-                      defaultValue=""
-                      required
-                    >
+                    <select id="inputState" className="form-control" required>
                       <option value="" disabled>
                         Choose Category
                       </option>
@@ -113,12 +107,7 @@ function ValidationsForm() {
 
                   <div className="mb-3 col-md-6">
                     <label className="form-label">Status</label>
-                    <select
-                      id="inputState"
-                      className="form-control"
-                      defaultValue=""
-                      required
-                    >
+                    <select id="inputState" className="form-control" required>
                       <option value="" disabled>
                         Choose Status
                       </option>

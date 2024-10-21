@@ -6,9 +6,8 @@ function Submit_Thesis() {
     <div className="content-body">
       <div className="container-fluid">
         <div className="row">
-          
           <SubmitThesisForm />
-          <div className="col-xl-6">
+          <div className="col-lg-6">
             <div className="card">
               <div className="card-header d-block">
                 <h4 className="card-title">Guidelines and Template</h4>

@@ -1,20 +1,20 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Logo from "../Logo";
 
-function DashBoardHeader({ onToggle ,isMenuToggled}) {
+function DashBoardHeader({ onToggle, isMenuToggled }) {
   const [isNotificationOpen, setNotificationOpen] = useState(false);
   const [isProfileOpen, setProfileOpen] = useState(false);
   const [role, setRole] = useState(null);
 
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   useEffect(() => {
     if (pathname) {
-      const currentRole = pathname.split("/")[2]; 
-      setRole(currentRole); 
+      const currentRole = pathname.split("/")[2];
+      setRole(currentRole);
     }
   }, [pathname]);
 
@@ -29,10 +29,17 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
   return (
     <div>
       <div className="nav-header">
-        <Link href={`/dashboard/${role}`} className="brand-logo">
-          
-          <img src="/dash/icons/icon.png" alt="logo" />
-          {!isMenuToggled &&  <h3>ScholarVault</h3>}
+        <Link href={`/`} className="brand-logo gap-2 d-flex align-items-center">
+          <img
+            src="/dash/icons/icon.png"
+            alt="logo"
+            style={{ width: "40px" }}
+          />
+          {!isMenuToggled && (
+            <h3>
+              <strong>ScholarVault</strong>
+            </h3>
+          )}
         </Link>
         <a onClick={onToggle} className="nav-control">
           <div className="hamburger">
@@ -41,7 +48,6 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
             <span className="line" />
           </div>
         </a>
-        
       </div>
 
       <div className="header">
@@ -49,13 +55,13 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
           <nav className="navbar navbar-expand">
             <div className="collapse navbar-collapse justify-content-between">
               <div className="header-left">
-                <div className="dashboard_bar">Dashboard</div>
+                {/* <div className="dashboard_bar">Dashboard</div> */}
               </div>
               <ul className="navbar-nav header-right">
                 <li className="nav-item dropdown notification_dropdown ">
                   <a
                     className="nav-link border border-white"
-                    onClick={toggleNotificationDropdown} 
+                    onClick={toggleNotificationDropdown}
                     role="button"
                   >
                     <svg
@@ -95,10 +101,10 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                             </div>
                             <div className="media-body">
                               <h6 className="mb-1">
-                                Dr sultads Commented on your thesis
+                                Dr John Doe Commented on your Thesis
                               </h6>
                               <small className="d-block">
-                                29 July 2020 - 02:26 PM
+                                29 July 2024 - 02:26 PM
                               </small>
                             </div>
                           </div>
@@ -109,7 +115,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                             <div className="media-body">
                               <h6 className="mb-1">New Thesis added</h6>
                               <small className="d-block">
-                                29 July 2020 - 02:26 PM
+                                29 July 2024 - 02:26 PM
                               </small>
                             </div>
                           </div>
@@ -121,7 +127,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                             <div className="media-body">
                               <h6 className="mb-1">New Thesis added</h6>
                               <small className="d-block">
-                                29 July 2020 - 02:26 PM
+                                29 July 2024 - 02:26 PM
                               </small>
                             </div>
                           </div>
@@ -130,9 +136,7 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                     </div>
                   </div>
                 </li>
-
-                
-                <li className="nav-item dropdown header-profile">
+                <li className="nav-item dropdown">
                   <a
                     className="nav-link"
                     onClick={toggleProfileDropdown}
@@ -140,80 +144,89 @@ function DashBoardHeader({ onToggle ,isMenuToggled}) {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <div className="header-info2 d-flex align-items-center">
+                    <div className="header-info2 d-flex align-items-center gap-2">
                       <img
                         src="/dash/images/profile/pic1.jpg"
                         alt="img"
                         className="profile-image"
                         style={{
-                          width: '50px', 
-                          height: '50px', 
-                          borderRadius: '50%', 
-                          objectFit: 'cover' 
+                          width: "50px",
+                          height: "50px",
+                          borderRadius: "50%",
+                          objectFit: "cover",
                         }}
                       />
-                      <div className="d-flex align-items-center sidebar-info ">
-                   
+                      <div className="d-flex align-items-center sidebar-info">
                         <div>
                           <span></span>
-                          <span className="font-w400 d-block ">
-                            Franklin Jr
+                          <span className="font-w400 d-block">
+                            <strong>User</strong>
                           </span>
                         </div>
                       </div>
                     </div>
                   </a>
-
                   <div
-                    className={`dropdown-menu dropdown-menu-end ${
+                    className={`mt-10 dropdown-menu dropdown-menu-end ${
                       isProfileOpen ? "show" : ""
                     }`}
-                    style={{ marginTop: '190px' }} 
                   >
-                    <Link
-                      href={`/dashboard/${role}/profile`}
-                      className="dropdown-item ai-icon"
-                      style={{ whiteSpace: 'nowrap' }}
-                    >
-                      <svg
-                        id="icon-user2"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-primary"
-                        width={18}
-                        height={18}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                        <circle cx={12} cy={7} r={4} />
-                      </svg>
-                      <span className="ms-2">Profile </span>
-                    </Link>
-
-                    <Link href="/" className="dropdown-item ai-icon"
-                    style={{ whiteSpace: 'nowrap' }}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-danger"
-                        width={18}
-                        height={18}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-                        <polyline points="16 17 21 12 16 7" />
-                        <line x1={21} y1={12} x2={9} y2={12} />
-                      </svg>
-                      <span className="ms-2">Logout </span>
-                    </Link>
+                    <div id="DZ_W_Notification1" className="widget-media">
+                      <ul className="timeline">
+                        <li>
+                          <Link
+                            href={`/dashboard/${role}/profile`}
+                            className="dropdown-item ai-icon"
+                            style={{ whiteSpace: "nowrap" }}
+                            onClick={toggleProfileDropdown}
+                          >
+                            <svg
+                              id="icon-user2"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="text-primary"
+                              width={18}
+                              height={18}
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                              <circle cx={12} cy={7} r={4} />
+                            </svg>
+                            <span className="ms-2">Profile </span>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/"
+                            className="dropdown-item ai-icon"
+                            style={{ whiteSpace: "nowrap" }}
+                            onClick={toggleProfileDropdown}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="text-danger"
+                              width={18}
+                              height={18}
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                              <polyline points="16 17 21 12 16 7" />
+                              <line x1={21} y1={12} x2={9} y2={12} />
+                            </svg>
+                            <span className="ms-2">Logout</span>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
               </ul>

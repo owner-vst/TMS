@@ -43,11 +43,11 @@ function LandingLayout({ children }) {
           <Script src="/assets/js/anm.js"></Script>
           <Script src="/assets/vendor/wow/wow.js"></Script>
           <Script src="/assets/vendor/swiper/swiper-bundle.min.js"></Script>
-          <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
+          <Script src="/assets/vendor/scholarvault/js/scholarvault.bundle.min.js"></Script>
           <Script src="/assets/vendor/magnific-popup/magnific-popup.js"></Script>
           <Script src="/assets/js/dz.carousel.js"></Script>
           <Script src="/assets/js/dz.ajax.js"></Script>
-          <Script src="/assets/js/custom.js"></Script>
+          {/* <Script src="/assets/js/custom.js"></Script> */}
         </div>
       </div>
     </>

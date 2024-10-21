@@ -196,18 +196,16 @@ function Footer() {
                 className="widget widget_links wow fadeInUp"
                 data-wow-delay="1.6s"
               >
-                
                 <h4 className="footer-title pt-3">Useful Links</h4>
                 <ul>
                   <li>
-                    <Link href="/about">About us</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/blogs">Blogs</Link>
                   </li>
-
                   <li>
-                    <Link href="/search">More Thesis</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -226,7 +224,7 @@ function Footer() {
                 >
                   Copyright 2024 by{" "}
                   <a className="text-primary" target="_blank">
-                    Scholar Vault
+                    ScholarVault
                   </a>
                   . All rights Reserved
                 </p>

@@ -3,7 +3,7 @@
          xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.4/phpunit.xsd"
          colors="true"
          verbose="true"
-         bootstrap="src/autoload.php">
+         scholarvault="src/autoload.php">
     <testsuites>
         <testsuite name="reCAPTCHA Test Suite">
             <directory>tests/ReCaptcha/</directory>

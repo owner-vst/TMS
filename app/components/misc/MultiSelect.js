@@ -1,10 +1,9 @@
-
 function MultiSelect() {
   return (
     <select id="multi-value-select" multiple={true}>
-      <option defaultValue={"ss"}>orange</option>
-      <option>white</option>
-      <option selected="selected">purple</option>
+      <option value="orange">orange</option>
+      <option value="white">white</option>
+      <option value="purple">purple</option>
     </select>
   );
 }

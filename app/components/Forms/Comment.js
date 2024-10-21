@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 function Comment() {
   useEffect(() => {
-    
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -23,6 +22,7 @@ function Comment() {
       });
     })();
   }, []);
+
   return (
     <form
       className="needs-validation"
@@ -30,28 +30,26 @@ function Comment() {
       id="commentform"
       method="post"
     >
-      <div className="mb-3 col-md-6">
+      <div className="mb-3 col-md-12">
         <label htmlFor="comment">Comment</label>
-        
         <textarea
           type="text"
-          className="form-control"
+          className="form-control w-100"
           id="comment"
           name="comment"
           placeholder="Enter Comment"
+          rows={5}
           required
-          rows={4}
         />
-        <div className="invalid-feedback">Please enter Comment.</div>
+        <div className="invalid-feedback">Please enter a comment.</div>
       </div>
-
-      <div className="invalid-feedback">Please enter Comment.</div>
-
-      <p className="form-submit">
-        <button type="submit" className="btn btn-primary" id="submit">
-          SUBMIT
-        </button>
-      </p>
+      <div className="row">
+        <div className="col-md-12 form-submit text-end">
+          <button type="submit" className="btn btn-primary btn-sm" id="submit">
+            Add Comment
+          </button>
+        </div>
+      </div>
     </form>
   );
 }

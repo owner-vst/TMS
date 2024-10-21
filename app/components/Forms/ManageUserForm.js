@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 function ManageUserForm({ mode, onCreate }) {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -65,12 +64,7 @@ function ManageUserForm({ mode, onCreate }) {
               <div className="row">
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Gender</label>
-                  <select
-                    name="gender"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select name="gender" className="form-control" required>
                     <option value="" disabled>
                       Choose Gender
                     </option>
@@ -137,12 +131,7 @@ function ManageUserForm({ mode, onCreate }) {
                 </div>
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Role</label>
-                  <select
-                    name="role"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select name="role" className="form-control" required>
                     <option value="" disabled>
                       Choose Role
                     </option>
@@ -154,12 +143,7 @@ function ManageUserForm({ mode, onCreate }) {
                 </div>
                 <div className="mb-3 col-md-6">
                   <label className="form-label">Status</label>
-                  <select
-                    name="status"
-                    className="form-control"
-                    defaultValue=""
-                    required
-                  >
+                  <select name="status" className="form-control" required>
                     <option value="" disabled>
                       Choose Status
                     </option>

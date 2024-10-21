@@ -1,8 +1,6 @@
 /*
     Table of Contents
 
-
-
     Table of Sass Contents
 
     1. Abstracts
@@ -12,8 +10,8 @@
         _mixin
         _variable
 
-    2. bootstrap 
-        -Here goes all official bootstrap scss files
+    2. scholarvault 
+        -Here goes all official scholarvault scss files
 
     3. Global/Base
         _color
@@ -50,22 +48,13 @@
 
 */
 
-
-
-
-
-
-
-
 ////////////////////
 // Abstracts
 ////////////////////
 @import "./abstracts/abstracts";
 
-//bootstrap library scss files
-@import "./../vendor/bootstrap/scss/bootstrap.scss";
-
-
+//scholarvault library scss files
+@import "./../vendor/scholarvault/scss/scholarvault.scss";
 
 ////////////////////
 // Global
@@ -74,31 +63,25 @@
 
 @import "./preloader";
 
-
 ////////////////////
 // Components
 ////////////////////
 @import "./layout/layout";
-
 
 ////////////////////
 // Components
 ////////////////////
 @import "./components/components";
 
-
 ////////////////////
 // All pages
 ////////////////////
 @import "./pages/pages";
 
-
-
 ////////////////////
 // RTL
 ////////////////////
 @import "./layout/rtl/rtl";
-
 
 ////////////////////
 // Version Color

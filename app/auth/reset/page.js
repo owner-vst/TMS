@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 function Reset() {
   useEffect(() => {
-   
     (function () {
       "use strict";
       const forms = document.querySelectorAll(".needs-validation");
@@ -25,22 +24,24 @@ function Reset() {
     })();
   }, []);
   return (
-    <div className="vh-100"
-    style={{
-      backgroundImage: "url('/dash/images/bg.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
+    <div
+      className="vh-100"
+      style={{
+        backgroundImage: "url('/dash/images/bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="authentication h-100">
         <div className="container h-100">
           <div className="row justify-content-center h-100 align-items-center">
             <div className="col-md-6">
               <div className="authentication-content">
                 <div className="row no-gutters">
-                  <div className="col-xl-12">
+                  <div className="col-lg-12">
                     <div className="auth-form">
                       <div className="text-center mb-3">
-                      <Link href="/" className="brand-logo">
+                        <Link href="/" className="brand-logo">
                           <Logo />
                         </Link>
                       </div>
@@ -83,7 +84,6 @@ function Reset() {
                           <button
                             type="submit"
                             className="btn btn-primary btn-block"
-                            
                           >
                             Submit
                           </button>
